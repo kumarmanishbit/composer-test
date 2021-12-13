@@ -23,7 +23,7 @@ jobs:
       - name: Download site Content
         uses: actions/download-artifact@v2
         with:
-          name: ./builds/
+          name: magento-extension
       - name: Archive Release
         uses: thedoctor0/zip-release@master
         with:
@@ -78,7 +78,13 @@ jobs:
         
       - name: Check the build version
         run: cd builds/ && ls
-        
+
+      - name: Upload artifact
+      - uses: actions/upload-artifact@v2
+        with:
+          name: magento-extension
+          path: ./builds/ # or path/to/artifact
+          
       - name: Remove auth.json file
         run: rm -f $GITHUB_WORKSPACE/auth.json
 
