@@ -73,6 +73,16 @@ jobs:
       - name: Run a one-line script
         run: php -v
         
+      - name: Generate version
+        run: |
+           php ci/gen-version.php  > ./version
+           ls
+           set +o pipefail
+           export VERSION="unknown"
+           "[ -f ./version ] && export VERSION=$(cat ./version)"
+           git checkout $VERSION
+           git status
+        
       - name: Execute build steps
         run:  php ci/build.php --environment prod --version 1.0.0
         
