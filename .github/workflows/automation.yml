@@ -16,19 +16,6 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  release-project:
-    name: Release extension to GitHub Releases
-    runs-on: ubuntu-latest
-    steps:
-       - name: Download extension
-         uses: actions/download-artifact@v2
-         with:
-           name: magento-extension
-       - name: Upload Release
-         uses: ncipollo/release-action@v1
-         with:
-           artifacts: "release.zip"
-    
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
