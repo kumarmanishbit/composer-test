@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="bronto_connector_queue_subscriber_transform">
+        <observer name="bronto_connector_queue_subscriber_transform_handle" instance="Bronto\Optin\Observer\AfterTransformEventObserver" />
+    </event>
+    <event name="bronto_connector_gather_endpoints">
+        <observer name="bronto_optin_gather_endpoints" instance="Bronto\Optin\Observer\AfterGatherEndpointsObserver" />
+    </event>
+    <event name="bronto_connector_optin_endpoint">
+        <observer name="bronto_optin_gather_endpoint" instance="Bronto\Optin\Observer\AfterEndpointInfoObserver" />
+    </event>
+    <event name="bronto_connector_advanced_endpoint_additional">
+        <observer name="bronto_connector_advanced_optin_handle" instance="Bronto\Optin\Observer\AfterAdvancedAdditionalObserver" />
+    </event>
+    <event name="bronto_connector_script_optin_test">
+        <observer name="bronto_connector_script_optin_test_handle" instance="Bronto\Optin\Observer\AfterTestImportObserver"/>
+    </event>
+    <event name="bronto_connector_script_optin_historical">
+        <observer name="bronto_connector_script_optin_historical_handle" instance="Bronto\Optin\Observer\AfterHistoricalImportObserver"/>
+    </event>
+    <event name="newsletter_subscriber_save_after">
+        <observer name="Bronto_Optin::pushCustomer" instance="Bronto\Optin\Observer\AfterSubscriberSaveObserver" />
+    </event>
+    <event name="bronto_connector_script_optin_unsub">
+        <observer name="Bronto_Optin::syncSubscribes" instance="Bronto\Optin\Observer\AfterSyncSubscribesObserver" />
+    </event>
+    <event name="sales_model_service_quote_submit_success">
+        <observer name="Bronto_Optin:subscribeAtCheckout" instance="Bronto\Optin\Observer\AfterSubscribeAtCheckout" />
+    </event>
+</config>

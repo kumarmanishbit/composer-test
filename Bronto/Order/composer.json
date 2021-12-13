@@ -1,0 +1,23 @@
+{
+    "name": "bronto/magento-module-order",
+    "description": "Bronto Extension for Magento - Order Module",
+    "type": "magento2-module",
+    "license": [
+        "UPL-1.0"
+    ],
+    "require": {
+        "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+        "magento/module-sales": "^100|^101|^102|^103",
+        "bronto/magento-module-connector": "1.0.0",
+        "bronto/magento-module-cart": "1.0.0"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Bronto\\Order\\": ""
+        }
+    },
+    "version": "1.0.0"
+}

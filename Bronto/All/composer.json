@@ -1,0 +1,27 @@
+{
+    "name": "bronto/magento-module-all",
+    "description": "Bronto Extension for Magento - All Modules",
+    "type": "metapackage",
+    "license": [
+        "UPL-1.0"
+    ],
+    "require": {
+        "bronto/php-common-helper": "^1",
+        "bronto/magento-module-browse": "1.0.0",
+        "bronto/magento-module-cart": "1.0.0",
+        "bronto/magento-module-connector": "1.0.0",
+        "bronto/magento-module-contact": "1.0.0",
+        "bronto/magento-module-coupon": "1.0.0",
+        "bronto/magento-module-email": "1.0.0",
+        "bronto/magento-module-integration": "1.0.0",
+        "bronto/magento-module-inventory": "1.0.0",
+        "bronto/magento-module-m2": "1.0.0",
+        "bronto/magento-module-notification": "1.0.0",
+        "bronto/magento-module-order": "1.0.0",
+        "bronto/magento-module-optin": "1.0.0",
+        "bronto/magento-module-product": "1.0.0",
+        "bronto/magento-module-rating": "1.0.0",
+        "bronto/magento-module-redemption": "1.0.0"
+    },
+    "version": "1.0.0"
+}

@@ -1,0 +1,13 @@
+{
+    "name": "bronto/magento-module-enterprise",
+    "description": "Bronto Extension for Magento - Enterprise Modules",
+    "type": "metapackage",
+    "license": [
+        "UPL-1.0"
+    ],
+    "require": {
+        "bronto/magento-module-reward": "1.0.0",
+        "bronto/magento-module-balance": "1.0.0"
+    },
+    "version": "1.0.0"
+}

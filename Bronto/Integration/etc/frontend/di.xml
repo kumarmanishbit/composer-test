@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+<type name="Magento\Customer\CustomerData\SectionPoolInterface">
+    <arguments>
+        <argument name="sectionSourceMap" xsi:type="array">
+            <item name="redemption" xsi:type="string">Bronto\Integration\Block\Redemption</item>
+            <item name="bta" xsi:type="string">Bronto\Order\Block\Bta</item>
+        </argument>
+    </arguments>
+</type>
+<preference for="Bronto\M2\Integration\ScriptManagerSettingsInterface" type="Bronto\M2\Integration\ScriptManagerSettings"/>
+<preference for="Bronto\M2\Core\Log\LoggerInterface" type="Bronto\M2\Impl\Core\Logger"/>
+</config>

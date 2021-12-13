@@ -1,0 +1,21 @@
+{
+    "name": "bronto/magento-module-connector",
+    "description": "Bronto Extension for Magento - Connector Module",
+    "type": "magento2-module",
+    "license": [
+        "UPL-1.0"
+    ],
+    "require": {
+        "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+        "bronto/magento-module-m2": "1.0.0"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Bronto\\Connector\\": ""
+        }
+    },
+    "version": "1.0.0"
+}

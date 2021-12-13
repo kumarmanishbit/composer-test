@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+  <event name="bronto_connector_queue_browse_transform">
+    <observer name="bronto_connector_queue_browse_transform_handle" instance="Bronto\Browse\Model\Observer\AfterTransformEventObserver" />
+  </event>
+  <event name="bronto_connector_integration_endpoint_additional">
+    <observer name="bronto_browse_integration_endpoint_additional" instance="Bronto\Browse\Model\Observer\AfterIntegrationAdditionalObserver" />
+  </event>
+</config>

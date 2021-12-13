@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+  <event name="bronto_connector_queue_cart_transform">
+    <observer name="bronto_connector_queue_cart_transform_handle" instance="Bronto\Cart\Model\Observer\AfterTransformEventObserver" />
+  </event>
+  <event name="bronto_connector_integration_endpoint_additional">
+    <observer name="bronto_cart_integration_endpoint_additional" instance="Bronto\Cart\Model\Observer\AfterIntegrationAdditionalObserver" />
+  </event>
+  <event name="sales_model_service_quote_submit_success">
+    <observer name="bronto_cart_quote_submitted" instance="Bronto\Cart\Model\Observer\AfterPushChangesObserver" />
+  </event>
+  <event name="sales_quote_delete_after">
+    <observer name="bronto_cart_quote_delete_after" instance="Bronto\Cart\Model\Observer\AfterPushChangesObserver" />
+  </event>
+  <event name="bronto_optin_subscribe">
+  <observer name="bronto_optin_subscribe_handle" instance="Bronto\Cart\Model\Observer\AfterSubscribeObserver" />
+  </event>
+  <event name="bronto_checkout_email_capture">
+    <observer name="bronto_checkout_email_capture_handle" instance="Bronto\Cart\Model\Observer\AfterCheckoutEmailCaptureObserver" />
+  </event>
+</config>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="bronto_connector_contact_endpoint_additional">
+        <observer name="bronto_reward_contact_endpoint" instance="Bronto\Reward\Model\Observer\AfterContactAdditionalObserver" />
+    </event>
+    <event name="bronto_contact_extra_contact_attributes">
+        <observer name="bronto_reward_contact_extra_fields" instance="Bronto\Reward\Model\Observer\AfterContactLoadFieldsObserver" />
+    </event>
+</config>

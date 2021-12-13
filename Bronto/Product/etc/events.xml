@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="bronto_connector_queue_product_transform">
+        <observer name="bronto_connector_queue_product_transform_handle" instance="Bronto\Product\Model\Observer\AfterTransformEventObserver" />
+    </event>
+    <event name="bronto_product_extra_fields">
+        <observer name="bronto_product_extra_fields_handle" instance="Bronto\Product\Model\Observer\AfterSetExtraFieldsObserver" />
+    </event>
+    <event name="bronto_product_default_fields">
+        <observer name="bronto_product_default_fields_handle" instance="Bronto\Product\Model\Observer\AfterSetDefaultFieldsObserver" />
+    </event>
+    <event name="bronto_product_custom_fields">
+        <observer name="bronto_product_custom_fields_handle" instance="Bronto\Product\Model\Observer\AfterSetCustomFieldsObserver" />
+    </event>
+    <event name="bronto_product_attribute_fields">
+        <observer name="bronto_product_attribute_fields_handle" instance="Bronto\Product\Model\Observer\AfterSetAttributeFieldsObserver" />
+    </event>
+    <event name="bronto_connector_gather_endpoints">
+        <observer name="bronto_product_gather_endpoints" instance="Bronto\Product\Model\Observer\AfterGatherEndpointsObserver" />
+    </event>
+    <event name="bronto_connector_product_endpoint">
+        <observer name="bronto_product_gather_endpoint" instance="Bronto\Product\Model\Observer\AfterEndpointInfoObserver" />
+    </event>
+    <event name="bronto_connector_advanced_endpoint_additional">
+        <observer name="bronto_product_advanced_import" instance="Bronto\Product\Model\Observer\AfterAdvancedAdditionalObserver" />
+    </event>
+    <event name="bronto_connector_script_product_historical">
+        <observer name="bronto_connector_script_product_historical" instance="Bronto\Product\Model\Observer\AfterHistoricalImportObserver" />
+    </event>
+    <event name="bronto_connector_script_product_test">
+        <observer name="bronto_connector_script_product_test" instance="Bronto\Product\Model\Observer\AfterTestImportObserver" />
+    </event>
+    <event name="bronto_connector_script_product_event">
+        <observer name="bronto_connector_script_product_event_handle" instance="Bronto\Product\Model\Observer\AfterSendProductUpdatesObserver" />
+    </event>
+    <event name="catalog_product_save_after">
+        <observer name="Bronto_Product::pushProduct" instance="Bronto\Product\Model\Observer\AfterCatalogProductSaveObserver" />
+    </event>
+    <event name="catalog_product_delete_after_done">
+        <observer name="Bronto_Product::deleteProduct" instance="Bronto\Product\Model\Observer\AfterCatalogProductDeleteObserver" />
+    </event>
+</config>

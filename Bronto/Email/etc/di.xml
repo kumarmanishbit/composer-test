@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+  <preference for="Bronto\M2\Email\SettingsInterface" type="Bronto\Email\Model\Settings"/>
+  <preference for="Bronto\M2\Email\TriggerManagerInterface" type="Bronto\Email\Impl\Trigger"/>
+  <preference for="Magento\Sales\Order\Email\SenderBuilder" type="Bronto\Email\Plugin\OrderSenderBuilder" />
+  <type name="Magento\Framework\Mail\TransportInterfaceFactory">
+    <plugin name="Bronto_Email::createTransport" type="Bronto\Email\Plugin\CreateTransport" />
+  </type>
+  <type name="Magento\Framework\Mail\Template\FactoryInterface">
+    <plugin name="Bronto_Email::loadTemplate" type="Bronto\Email\Plugin\LoadTemplate" />
+  </type>
+  <type name="Magento\Config\Model\Config\Source\Email\Template">
+    <plugin name="Bronto_Email::toOptionArray" type="Bronto\Email\Plugin\ConfigOptions" />
+  </type>
+</config>
