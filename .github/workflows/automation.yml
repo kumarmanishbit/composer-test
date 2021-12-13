@@ -81,7 +81,7 @@ jobs:
            ls
            set +o pipefail
            export VERSION="unknown"
-           "[ -f ./version ] && export VERSION=$(cat ./version)"
+           [ -f ./version ] && export VERSION=$(cat ./version)
            git checkout $VERSION
            git status
         
