@@ -24,7 +24,12 @@ function run() {
     }
 
     try {
-        $latestVersion = new SemVer\Version($latest);
+        $latestVersion = '';
+        if($latest === 'refs/heads/main') {
+            $latestVersion = SemVer\Version::parse('v1');
+        } else {
+            $latestVersion = new SemVer\Version($latest);
+        }
     } catch (SemVer\Exceptions\InvalidVersionException $ive) {
         echo "Invalid version. Value given: " . $latest;
         exit(1);
