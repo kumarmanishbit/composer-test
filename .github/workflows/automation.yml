@@ -38,6 +38,12 @@ jobs:
       - name: Run a one-line script
         run: php -v
         
+      - name: Execute build steps
+        run:  php ci/build.php --environment prod --version 1.0.0
+        
+      - name: Check the build version
+        run: cd builds/ && ls
+        
       - name: Remove auth.json file
         run: rm -f $GITHUB_WORKSPACE/auth.json
 
