@@ -20,6 +20,21 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+    
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          
+      - name: Generate version
+        run: |
+           php ci/gen-version.php  > ./version
+           ls
+           set +o pipefail
+           export VERSION="unknown"
+           [ -f ./version ] && export VERSION=$(cat ./version)
+           git checkout $VERSION
+           git status
+           
       - name: Download site Content
         uses: actions/download-artifact@v2
         with:
@@ -35,8 +50,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          tag_name: $VERSION
+          release_name: Release $VERSION
           draft: false
           prerelease: false
       - name: Upload Release Asset
@@ -47,7 +62,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
           asset_path: ./release.zip
-          asset_name: magento-extension${{ github.ref }}.zip
+          asset_name: magento-extension$VERSION.zip
           asset_content_type: application/zip
       
   # This workflow contains a single job called "build"
@@ -86,7 +101,7 @@ jobs:
            git status
         
       - name: Execute build steps
-        run:  php ci/build.php --environment prod --version 1.0.0
+        run:  php ci/build.php --environment prod --version $VERSION
         
       - name: Check the build version
         run: cd builds/ && ls
