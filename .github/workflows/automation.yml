@@ -80,7 +80,7 @@ jobs:
         run: cd builds/ && ls
 
       - name: Upload artifact
-      - uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v2
         with:
           name: magento-extension
           path: ./builds/ # or path/to/artifact
