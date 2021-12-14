@@ -39,7 +39,6 @@ jobs:
         
       - name: Generate version
         run: |
-           rm ./version
            php ci/gen-version.php  > ./version
            ls
            set +o pipefail
@@ -105,7 +104,6 @@ jobs:
         
       - name: Generate version
         run: |
-           rm ./version 
            php ci/gen-version.php  > ./version
            ls
            set +o pipefail
