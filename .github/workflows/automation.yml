@@ -109,7 +109,6 @@ jobs:
            set +o pipefail
            export VERSION="unknown"
            [ -f ./version ] && export VERSION=$(cat ./version)
-           echo $VERSION
            echo "VERSION=$VERSION" >> $GITHUB_ENV
            git status
            
