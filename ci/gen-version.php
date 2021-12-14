@@ -125,8 +125,8 @@ function bumpVersion(SemVer\Version $latestVersion) {
     }
 
     // Increment build number if necessary
-    $buildNumber = (int) $latestVersion->build ?: 0;
-    $newVersion->setPreRelease('rc')->setBuild((string) ++$buildNumber);
+    // $buildNumber = (int) $latestVersion->build ?: 0;
+    // $newVersion->setPreRelease('rc')->setBuild((string) ++$buildNumber);
 
     return $newVersion;
 }
