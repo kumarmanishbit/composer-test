@@ -45,7 +45,6 @@ jobs:
            export VERSION="unknown"
            [ -f ./version ] && export VERSION=$(cat ./version)
            echo "VERSION=$VERSION" >> $GITHUB_ENV
-           git checkout $VERSION
            git status
            
       - name: Download site Content
