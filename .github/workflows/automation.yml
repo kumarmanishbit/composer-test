@@ -101,6 +101,8 @@ jobs:
            [ -f ./version ] && export VERSION=$(cat ./version)
            echo $VERSION
            git status
+        env:
+          VERSION: $VERSION
            
       - name: print the repo name
         run: |
