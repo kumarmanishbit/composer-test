@@ -37,6 +37,7 @@ function run() {
         $generatedVersion->setPreRelease(null)
             ->setBuild(null);
     } else {
+        echo $latestVersion;
         $generatedVersion = bumpVersion($latestVersion);
     }
 
