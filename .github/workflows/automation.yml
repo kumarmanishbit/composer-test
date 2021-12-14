@@ -100,7 +100,6 @@ jobs:
            export VERSION="unknown"
            [ -f ./version ] && export VERSION=$(cat ./version)
            echo $VERSION
-           git checkout $VERSION
            git status
            
       - name: print the repo name
