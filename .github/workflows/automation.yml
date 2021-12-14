@@ -39,7 +39,6 @@ jobs:
         
       - name: Generate version
         run: |
-           rm ./version
            php ci/gen-version.php  > ./version
            ls
            set +o pipefail
@@ -63,7 +62,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: $VERSION
+          tag_name: ${{ env.VERSION }}
           release_name: Release ${{ env.VERSION }}
           draft: false
           prerelease: false
@@ -105,7 +104,6 @@ jobs:
         
       - name: Generate version
         run: |
-           rm ./version 
            php ci/gen-version.php  > ./version
            ls
            set +o pipefail
