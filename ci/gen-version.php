@@ -88,6 +88,7 @@ function bumpVersion(SemVer\Version $latestVersion) {
     while(stripos($lastRelease, '-rc')) {
         $lastRelease = array_shift($tags);
     }
+    echo $lastRelease;
     $newVersion = new SemVer\Version($lastRelease);
 
     // Get commit messages
@@ -143,6 +144,7 @@ function tagRepo(SemVer\Version $version) {
     echo getenv("GITHUB_WORKFLOW");
 //    $pushUrl = preg_replace("~.+@([^/]+)\/~", "git@$1:", $repoUrl);
 
+    echo $version;
     // TODO: use a client to execute the below commands
    // exec("git remote set-url origin {$pushUrl}");
     exec("git tag {$version}");
