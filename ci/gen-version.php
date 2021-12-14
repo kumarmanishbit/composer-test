@@ -24,12 +24,7 @@ function run() {
     }
 
     try {
-        $latestVersion = '';
-        if($latest === 'refs/heads/main') {
-            $latestVersion = SemVer\Version::parse('v1');
-        } else {
-            $latestVersion = new SemVer\Version($latest);
-        }
+        $latestVersion = new SemVer\Version($latest);
     } catch (SemVer\Exceptions\InvalidVersionException $ive) {
         echo "Invalid version. Value given: " . $latest;
         exit(1);
@@ -103,11 +98,14 @@ function bumpVersion(SemVer\Version $latestVersion) {
     }
 
     // Determine bump level
-    $bumpLevel = 'patch';
+    $bumpLevel = '';
     foreach ($commitMessages as $line) {
         if (stripos($line, '#major') !== false) {
             $bumpLevel = 'major';
             break;
+        }
+        if (stripos($line, '#patch') !== false) {
+            $bumpLevel = 'patch';
         }
         if (stripos($line, '#minor') !== false) {
             $bumpLevel = 'minor';
@@ -122,9 +120,8 @@ function bumpVersion(SemVer\Version $latestVersion) {
         case 'minor':
             $newVersion->incrementMinor();
             break;
-        default:
+        case 'patch':
             $newVersion->incrementPatch();
-            break;
     }
 
     // Increment build number if necessary
