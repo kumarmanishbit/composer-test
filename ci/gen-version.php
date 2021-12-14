@@ -42,7 +42,6 @@ function run() {
     }
 
     tagRepo($generatedVersion);
-
     echo $generatedVersion;
 }
 
