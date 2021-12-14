@@ -110,6 +110,8 @@ jobs:
           echo ${{ github.repository }}
           echo $VERSION
           echo https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          echo "Printing environment variable"
+          env
         
       - name: Execute build steps
         run:  php ci/build.php --environment prod --version $VERSION
