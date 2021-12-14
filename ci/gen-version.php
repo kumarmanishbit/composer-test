@@ -37,7 +37,6 @@ function run() {
         $generatedVersion->setPreRelease(null)
             ->setBuild(null);
     } else {
-        echo $latestVersion;
         $generatedVersion = bumpVersion($latestVersion);
     }
 
@@ -88,7 +87,6 @@ function bumpVersion(SemVer\Version $latestVersion) {
     while(stripos($lastRelease, '-rc')) {
         $lastRelease = array_shift($tags);
     }
-    echo $lastRelease;
     $newVersion = new SemVer\Version($lastRelease);
 
     // Get commit messages
