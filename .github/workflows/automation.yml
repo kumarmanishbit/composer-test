@@ -80,7 +80,10 @@ jobs:
           fetch-depth: 0
           
       - name: print the repo name
-        run: echo ${{ github.repository }}
+        run: |
+          echo ${{ github.repository }}
+          echo ${{ github.repository }}
+          echo https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
       
       - name: Add HTTP basic auth credentials
         run: echo '${{ secrets.COMPOSER_AUTH_JSON }}' > $GITHUB_WORKSPACE/auth.json
