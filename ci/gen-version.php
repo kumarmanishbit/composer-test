@@ -138,13 +138,13 @@ function bumpVersion(SemVer\Version $latestVersion) {
  */
 function tagRepo(SemVer\Version $version) {
 
-    $repoUrl = getenv("CI_REPOSITORY_URL");
+    // $repoUrl = getenv("CI_REPOSITORY_URL");
     echo "GITHUB_WORKFLOW";
     echo getenv("GITHUB_WORKFLOW");
-    $pushUrl = preg_replace("~.+@([^/]+)\/~", "git@$1:", $repoUrl);
+//    $pushUrl = preg_replace("~.+@([^/]+)\/~", "git@$1:", $repoUrl);
 
     // TODO: use a client to execute the below commands
-    exec("git remote set-url origin {$pushUrl}");
+   // exec("git remote set-url origin {$pushUrl}");
     exec("git tag {$version}");
     exec("git push origin {$version}");
 }
