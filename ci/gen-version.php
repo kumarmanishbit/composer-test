@@ -110,17 +110,24 @@ function bumpVersion(SemVer\Version $latestVersion) {
         }
     }
 
+    $release = "stg";
+
     // Bump it
     switch ($bumpLevel) {
         case 'major':
             $newVersion->incrementMajor();
+            $release = "prod";
             break;
         case 'minor':
             $newVersion->incrementMinor();
+            $release = "prod";
             break;
         case 'patch':
             $newVersion->incrementPatch();
+            $release = "prod";
     }
+
+    putenv("RELEASE_ENV=$release");
 
     if(!$newVersion->eq(new SemVer\Version($lastRelease))) {
         tagRepo($newVersion);
