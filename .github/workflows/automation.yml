@@ -105,6 +105,9 @@ jobs:
       - name: Generate version
         run: |
            php ci/gen-version.php  > ./version
+           echo "RELEASE_ENV value"
+           echo $RELEASE_ENV
+           echo "*******"
            ls
            set +o pipefail
            export VERSION="unknown"
