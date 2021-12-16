@@ -37,11 +37,14 @@ function run()
 
     updateMetaVersion($targetVersion);
 
+//    $podEnvs = array(
+//        "q1p1" => "https://apps.p01.elqqa01.com",
+//        "q1p2" => "https://apps.p02.elqqa01.com",
+//        "q1p3" => "https://apps.p03.elqqa01.com",
+//        "q5p1" => "https://apps.p01.elqqa05.com",
+//        "pod2" => "https://apps.p02.eloqua.com");
+
     $podEnvs = array(
-        "q1p1" => "https://apps.p01.elqqa01.com",
-        "q1p2" => "https://apps.p02.elqqa01.com",
-        "q1p3" => "https://apps.p03.elqqa01.com",
-        "q5p1" => "https://apps.p01.elqqa05.com",
         "pod2" => "https://apps.p02.eloqua.com");
 
     foreach ($podEnvs as $podEnv => $url) {

@@ -1,6 +1,6 @@
 cdn_urls:
-    stg: "https://objectstorage.us-ashburn-1.oraclecloud.com/n/elqqa/b/magento_extension/o"
-    prod: "https://objectstorage.us-ashburn-1.oraclecloud.com/n/elqqa/b/magento_extension/o"
+    stg: "https://github.com/kumarmanishbit/composer-test/releases/download"
+    prod: "https://github.com/kumarmanishbit/composer-test/releases/download"
 
 paths:
     build: "builds"
