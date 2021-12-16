@@ -45,6 +45,8 @@ jobs:
            export VERSION="unknown"
            [ -f ./version ] && export VERSION=$(cat ./version)
            echo "VERSION=$VERSION" > $GITHUB_ENV
+           [ -f ./environment ] && export RELEASE_ENV=$(cat ./environment)
+           echo "RELEASE_ENV=RELEASE_ENV" > $GITHUB_ENV
            git status
            
       - name: Download site Content
@@ -105,15 +107,18 @@ jobs:
       - name: Generate version
         run: |
            php ci/gen-version.php  > ./version
-           echo "RELEASE_ENV value"
-           echo $RELEASE_ENV
-           echo "*******"
            ls
            set +o pipefail
            export VERSION="unknown"
            [ -f ./version ] && export VERSION=$(cat ./version)
            echo "VERSION=$VERSION" > $GITHUB_ENV
+           [ -f ./environment ] && export RELEASE_ENV=$(cat ./environment)
+           echo "RELEASE_ENV=RELEASE_ENV" > $GITHUB_ENV
            git status
+           echo "RELEASE_ENV value"
+           echo $RELEASE_ENV
+           echo "*******"
+           rm ./environment
            
       - name: print the repo name
         run: |
