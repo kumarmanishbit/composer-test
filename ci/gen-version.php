@@ -122,7 +122,7 @@ function bumpVersion(SemVer\Version $latestVersion) {
             $newVersion->incrementPatch();
     }
 
-    if(!$newVersion->eq($lastRelease)) {
+    if(!$newVersion->eq(new SemVer\Version($lastRelease))) {
         tagRepo($newVersion);
     }
     // Increment build number if necessary
