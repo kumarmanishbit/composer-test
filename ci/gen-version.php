@@ -40,7 +40,6 @@ function run() {
         $generatedVersion = bumpVersion($latestVersion);
     }
 
-    tagRepo($generatedVersion);
     echo $generatedVersion;
 }
 
@@ -123,6 +122,9 @@ function bumpVersion(SemVer\Version $latestVersion) {
             $newVersion->incrementPatch();
     }
 
+    if(!$newVersion->eq($lastRelease)) {
+        tagRepo($newVersion);
+    }
     // Increment build number if necessary
     // $buildNumber = (int) $latestVersion->build ?: 0;
     // $newVersion->setPreRelease('rc')->setBuild((string) ++$buildNumber);
