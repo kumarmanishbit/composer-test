@@ -51,6 +51,8 @@ jobs:
            echo "Printing the env name"
            env
            git status
+           echo "Printing env.RELEASE_ENV name"
+           echo env.RELEASE_ENV
         
       - name: Download site Content
         if: env.RELEASE_ENV == 'prod'
