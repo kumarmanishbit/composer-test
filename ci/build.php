@@ -209,7 +209,7 @@ function buildPackages($podEnv)
             if (preg_match('|/(.+)|', implode(' ', $archiveOutput), $matches)) {
                 $filename = basename($matches[1]);
 //                $packagePath = "{$cdnPath}/_packages/{$filename}";
-                $packagePath = "{$cdnPath}/{$podEnv}/{$targetVersion}/{$filename}";
+                $packagePath = "{$cdnPath}/{$targetVersion}/{$filename}";
                 $packageInfo['dist'] = [
                     'url' => $packagePath,
                     'type' => 'zip'

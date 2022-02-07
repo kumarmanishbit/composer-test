@@ -87,9 +87,9 @@ jobs:
           echo "cd 1.0.0"
           cd 1.0.0
           ls
-      - name: Upload Release Asset 1
+      - name: Upload Release Asset bronto-magento-module-all
         if: ${{ env.RELEASE_ENV }} == 'prod'
-        id: upload-release-asset-1
+        id: upload-release-asset-bronto-magento-module-all
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -98,9 +98,9 @@ jobs:
           asset_path: ./pod2/${{ env.VERSION }}/bronto-magento-module-all-${{ env.VERSION }}.zip
           asset_name: bronto-magento-module-all-${{ env.VERSION }}.zip
           asset_content_type: application/zip
-      - name: Upload Release Asset 2
+      - name: Upload Release Asset bronto-magento-module-browse
         if: ${{ env.RELEASE_ENV }} == 'prod'
-        id: upload-release-asset-2
+        id: upload-release-asset-bronto-magento-module-browse
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -109,9 +109,9 @@ jobs:
           asset_path: ./pod2/${{ env.VERSION }}/bronto-magento-module-browse-${{ env.VERSION }}.zip
           asset_name: bronto-magento-module-browse-${{ env.VERSION }}.zip
           asset_content_type: application/zip
-      - name: Upload Release Asset 3
+      - name: Upload Release Asset bronto-magento-module-cart
         if: ${{ env.RELEASE_ENV }} == 'prod'
-        id: upload-release-asset-3
+        id: upload-release-asset-bronto-magento-module-cart
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -120,9 +120,9 @@ jobs:
           asset_path: ./pod2/${{ env.VERSION }}/bronto-magento-module-cart-${{ env.VERSION }}.zip
           asset_name: bronto-magento-module-cart-${{ env.VERSION }}.zip
           asset_content_type: application/zip
-      - name: Upload Release Asset 4
+      - name: Upload Release Asset bronto-magento-module-connector
         if: ${{ env.RELEASE_ENV }} == 'prod'
-        id: upload-release-asset-4
+        id: upload-release-asset-bronto-magento-module-connector
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -131,9 +131,9 @@ jobs:
           asset_path: ./pod2/${{ env.VERSION }}/bronto-magento-module-connector-${{ env.VERSION }}.zip
           asset_name: bronto-magento-module-connector-${{ env.VERSION }}.zip
           asset_content_type: application/zip
-      - name: Upload Release Asset 5
+      - name: Upload Release Asset bronto-magento-module-contact
         if: ${{ env.RELEASE_ENV }} == 'prod'
-        id: upload-release-asset-5
+        id: upload-release-asset-bronto-magento-module-contact
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -142,9 +142,9 @@ jobs:
           asset_path: ./pod2/${{ env.VERSION }}/bronto-magento-module-contact-${{ env.VERSION }}.zip
           asset_name: bronto-magento-module-contact-${{ env.VERSION }}.zip
           asset_content_type: application/zip
-      - name: Upload Release Asset 6
+      - name: Upload Release Asset bronto-magento-module-coupon
         if: ${{ env.RELEASE_ENV }} == 'prod'
-        id: upload-release-asset-6
+        id: upload-release-asset-bronto-magento-module-coupon
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -153,9 +153,9 @@ jobs:
           asset_path: ./pod2/${{ env.VERSION }}/bronto-magento-module-coupon-${{ env.VERSION }}.zip
           asset_name: bronto-magento-module-coupon-${{ env.VERSION }}.zip
           asset_content_type: application/zip
-      - name: Upload Release Asset 7
+      - name: Upload Release Asset bronto-magento-module-email
         if: ${{ env.RELEASE_ENV }} == 'prod'
-        id: upload-release-asset-7
+        id: upload-release-asset-bronto-magento-module-email
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -164,9 +164,9 @@ jobs:
           asset_path: ./pod2/${{ env.VERSION }}/bronto-magento-module-email-${{ env.VERSION }}.zip
           asset_name: bronto-magento-module-email-${{ env.VERSION }}.zip
           asset_content_type: application/zip
-      - name: Upload Release Asset 8
+      - name: Upload Release Asset bronto-magento-module-enterprise
         if: ${{ env.RELEASE_ENV }} == 'prod'
-        id: upload-release-asset-8
+        id: upload-release-asset-bronto-magento-module-enterprise
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

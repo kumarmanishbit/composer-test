@@ -1,6 +1,6 @@
 cdn_urls:
-    stg: "{cdn-placeholder-url}"
-    prod: "{cdn-placeholder-url}"
+    stg: "https://github.com/kumarmanishbit/composer-test/releases/download"
+    prod: "https://github.com/kumarmanishbit/composer-test/releases/download"
 
 paths:
     build: "builds"
