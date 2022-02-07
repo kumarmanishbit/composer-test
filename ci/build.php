@@ -159,12 +159,11 @@ function buildPackages($podEnv)
             mkdir($targetDir);
         }
     }
-
     $repoTemplate = [
         'repositories' => [
             [
                 'type' => 'composer',
-                'url' => $config['cdn_urls'][$env].'/'.$podEnv
+                'url' => $config['cdn_urls'][$env].'/'.$targetVersion.'/packages.json'
             ]
         ]
     ];

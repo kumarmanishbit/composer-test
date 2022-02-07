@@ -28,13 +28,13 @@
                 },
                 "version": "1.0.0",
                 "dist": {
-                    "url": "{cdn-placeholder-url}/pod2/1.0.0/bronto-magento-module-all-1.0.0.zip",
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/bronto-magento-module-all-1.0.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "{cdn-placeholder-url}/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
                     }
                 ]
             }
@@ -62,13 +62,13 @@
                 },
                 "version": "1.0.0",
                 "dist": {
-                    "url": "{cdn-placeholder-url}/pod2/1.0.0/bronto-magento-module-browse-1.0.0.zip",
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/bronto-magento-module-browse-1.0.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "{cdn-placeholder-url}/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
                     }
                 ]
             }
@@ -96,13 +96,13 @@
                 },
                 "version": "1.0.0",
                 "dist": {
-                    "url": "{cdn-placeholder-url}/pod2/1.0.0/bronto-magento-module-cart-1.0.0.zip",
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/bronto-magento-module-cart-1.0.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "{cdn-placeholder-url}/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
                     }
                 ]
             }
@@ -129,13 +129,13 @@
                 },
                 "version": "1.0.0",
                 "dist": {
-                    "url": "{cdn-placeholder-url}/pod2/1.0.0/bronto-magento-module-connector-1.0.0.zip",
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/bronto-magento-module-connector-1.0.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "{cdn-placeholder-url}/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
                     }
                 ]
             }
@@ -163,13 +163,13 @@
                 },
                 "version": "1.0.0",
                 "dist": {
-                    "url": "{cdn-placeholder-url}/pod2/1.0.0/bronto-magento-module-contact-1.0.0.zip",
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/bronto-magento-module-contact-1.0.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "{cdn-placeholder-url}/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
                     }
                 ]
             }
@@ -197,13 +197,13 @@
                 },
                 "version": "1.0.0",
                 "dist": {
-                    "url": "{cdn-placeholder-url}/pod2/1.0.0/bronto-magento-module-coupon-1.0.0.zip",
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/bronto-magento-module-coupon-1.0.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "{cdn-placeholder-url}/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
                     }
                 ]
             }
@@ -232,13 +232,13 @@
                 },
                 "version": "1.0.0",
                 "dist": {
-                    "url": "{cdn-placeholder-url}/pod2/1.0.0/bronto-magento-module-email-1.0.0.zip",
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/bronto-magento-module-email-1.0.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "{cdn-placeholder-url}/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
                     }
                 ]
             }
@@ -257,13 +257,13 @@
                 },
                 "version": "1.0.0",
                 "dist": {
-                    "url": "{cdn-placeholder-url}/pod2/1.0.0/bronto-magento-module-enterprise-1.0.0.zip",
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/bronto-magento-module-enterprise-1.0.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "{cdn-placeholder-url}/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
                     }
                 ]
             }
@@ -291,13 +291,13 @@
                 },
                 "version": "1.0.0",
                 "dist": {
-                    "url": "{cdn-placeholder-url}/pod2/1.0.0/bronto-magento-module-integration-1.0.0.zip",
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/bronto-magento-module-integration-1.0.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "{cdn-placeholder-url}/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
                     }
                 ]
             }
@@ -325,13 +325,13 @@
                 },
                 "version": "1.0.0",
                 "dist": {
-                    "url": "{cdn-placeholder-url}/pod2/1.0.0/bronto-magento-module-inventory-1.0.0.zip",
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/bronto-magento-module-inventory-1.0.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "{cdn-placeholder-url}/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
                     }
                 ]
             }
@@ -358,13 +358,13 @@
                 },
                 "version": "1.0.0",
                 "dist": {
-                    "url": "{cdn-placeholder-url}/pod2/1.0.0/bronto-magento-module-m2-1.0.0.zip",
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/bronto-magento-module-m2-1.0.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "{cdn-placeholder-url}/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
                     }
                 ]
             }
@@ -391,13 +391,13 @@
                 },
                 "version": "1.0.0",
                 "dist": {
-                    "url": "{cdn-placeholder-url}/pod2/1.0.0/bronto-magento-module-notification-1.0.0.zip",
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/bronto-magento-module-notification-1.0.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "{cdn-placeholder-url}/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
                     }
                 ]
             }
@@ -425,13 +425,13 @@
                 },
                 "version": "1.0.0",
                 "dist": {
-                    "url": "{cdn-placeholder-url}/pod2/1.0.0/bronto-magento-module-optin-1.0.0.zip",
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/bronto-magento-module-optin-1.0.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "{cdn-placeholder-url}/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
                     }
                 ]
             }
@@ -460,13 +460,13 @@
                 },
                 "version": "1.0.0",
                 "dist": {
-                    "url": "{cdn-placeholder-url}/pod2/1.0.0/bronto-magento-module-order-1.0.0.zip",
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/bronto-magento-module-order-1.0.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "{cdn-placeholder-url}/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
                     }
                 ]
             }
@@ -494,13 +494,13 @@
                 },
                 "version": "1.0.0",
                 "dist": {
-                    "url": "{cdn-placeholder-url}/pod2/1.0.0/bronto-magento-module-product-1.0.0.zip",
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/bronto-magento-module-product-1.0.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "{cdn-placeholder-url}/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
                     }
                 ]
             }
@@ -528,13 +528,13 @@
                 },
                 "version": "1.0.0",
                 "dist": {
-                    "url": "{cdn-placeholder-url}/pod2/1.0.0/bronto-magento-module-rating-1.0.0.zip",
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/bronto-magento-module-rating-1.0.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "{cdn-placeholder-url}/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
                     }
                 ]
             }
@@ -562,13 +562,13 @@
                 },
                 "version": "1.0.0",
                 "dist": {
-                    "url": "{cdn-placeholder-url}/pod2/1.0.0/bronto-magento-module-redemption-1.0.0.zip",
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/bronto-magento-module-redemption-1.0.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "{cdn-placeholder-url}/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
                     }
                 ]
             }
