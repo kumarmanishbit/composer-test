@@ -63,7 +63,7 @@ jobs:
         uses: thedoctor0/zip-release@master
         with:
           type: 'zip'
-          filename: 'release.zip'
+          filename: 'bronto-magento-module-all-1.0.0'
           path: ./pod2/${{ env.VERSION }}/bronto-magento-module-all-1.0.0
           exclusions: '*.git* /*vendor/* .editorconfig'
       - name: Create Github Release
