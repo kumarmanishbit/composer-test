@@ -120,6 +120,17 @@ jobs:
           asset_path: ./pod2/1.0.0/bronto-magento-module-cart-1.0.0.zip
           asset_name: bronto-magento-module-cart-${{ env.VERSION }}.zip
           asset_content_type: application/zip
+      - name: Upload Release Asset 4
+        if: ${{ env.RELEASE_ENV }} == 'prod'
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/1.0.0/bronto-magento-module-connector-1.0.0.zip
+          asset_name: bronto-magento-module-connector-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
       
   # This workflow contains a single job called "build"
   build:
