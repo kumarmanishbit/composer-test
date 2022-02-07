@@ -44,6 +44,8 @@ jobs:
            ls
            set +o pipefail
            export VERSION="unknown"
+           echo "Printing the env name"
+           env
            [ -f ./version ] && export VERSION=$(cat ./version)
            echo "VERSION=$VERSION" >> $GITHUB_ENV
            [ -f ./environment ] && export RELEASE_ENV=$(cat ./environment)
