@@ -80,7 +80,12 @@ jobs:
       - name: Verify the files
         run: |
           echo "List the files"
+          ls
+          echo "cd pod2"
           cd pod2
+          ls
+          echo "cd 1.0.0"
+          cd 1.0.0
           ls
       - name: Upload Release Asset
         if: ${{ env.RELEASE_ENV }} == 'prod'
@@ -90,7 +95,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-          asset_path: ./pod2/1.0.0.zip
+          asset_path: ./pod2/1.0.0/bronto-magento-module-all-1.0.0.zip
           asset_name: magento-extension${{ env.VERSION }}.zip
           asset_content_type: application/zip
       
