@@ -79,6 +79,7 @@ jobs:
           prerelease: false
       - name: Verify the files
         run: |
+          echo "List the files"
           ls
       - name: Upload Release Asset
         if: ${{ env.RELEASE_ENV }} == 'prod'
