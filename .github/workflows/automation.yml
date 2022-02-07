@@ -79,7 +79,7 @@ jobs:
           prerelease: false
       - name: Verify the files
         run: |
-          echo "List the files"
+          echo "List the files "
           ls
           echo "cd pod2"
           cd pod2
