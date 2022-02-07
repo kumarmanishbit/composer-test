@@ -38,3 +38,4 @@ dev/
 SECURITY.md
 .travis.*
 builds/*
+.DS_Store
