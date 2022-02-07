@@ -64,7 +64,7 @@ jobs:
         with:
           type: 'zip'
           filename: 'bronto-magento-module-all-1.0.0'
-          path: ./pod2/${{ env.VERSION }}/bronto-magento-module-all-1.0.0
+          path: './pod2'
           exclusions: '*.git* /*vendor/* .editorconfig'
       - name: Create Github Release
         if: ${{ env.RELEASE_ENV }} == 'prod'
