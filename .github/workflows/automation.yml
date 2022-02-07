@@ -77,6 +77,9 @@ jobs:
           release_name: Release ${{ env.VERSION }}
           draft: false
           prerelease: false
+      - name: Verify the files
+        run: |
+          ls
       - name: Upload Release Asset
         if: ${{ env.RELEASE_ENV }} == 'prod'
         id: upload-release-asset 
