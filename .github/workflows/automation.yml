@@ -59,7 +59,7 @@ jobs:
         with:
           name: magento-extension
       - name: Archive Release
-        if: env.RELEASE_ENV == 'prod'
+        if: ${{ env.RELEASE_ENV }} == 'prod'
         uses: thedoctor0/zip-release@master
         with:
           type: 'zip'
@@ -67,7 +67,7 @@ jobs:
           path: ./pod2/${{ env.VERSION }}/bronto-magento-module-all-1.0.0
           exclusions: '*.git* /*vendor/* .editorconfig'
       - name: Create Github Release
-        if: env.RELEASE_ENV == 'prod'
+        if: ${{ env.RELEASE_ENV }} == 'prod'
         id: create_release
         uses: actions/create-release@v1
         env:
@@ -78,7 +78,7 @@ jobs:
           draft: false
           prerelease: false
       - name: Upload Release Asset
-        if: env.RELEASE_ENV == 'prod'
+        if: ${{ env.RELEASE_ENV }} == 'prod'
         id: upload-release-asset 
         uses: actions/upload-release-asset@v1
         env:
