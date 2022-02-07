@@ -1,5 +1,9 @@
 <?php
-
+/*
+ * Copyright © 2021, 2022 Oracle and/or its affiliates.
+ *
+ * Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
+ */
 require_once 'vendor/autoload.php';
 
 use Commando\Command;
@@ -149,7 +153,7 @@ function tagRepo(SemVer\Version $version) {
     // $repoUrl = getenv("CI_REPOSITORY_URL");
 //    $pushUrl = preg_replace("~.+@([^/]+)\/~", "git@$1:", $repoUrl);
     // TODO: use a client to execute the below commands
-   // exec("git remote set-url origin {$pushUrl}");
+    // exec("git remote set-url origin {$pushUrl}");
 
     exec("git tag {$version}");
     exec("git push origin {$version}");

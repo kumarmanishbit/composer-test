@@ -1,6 +1,6 @@
 <?php
 /*
- * Copyright © 2021, Oracle and/or its affiliates. All rights reserved.
+ * Copyright © 2021, 2022 Oracle and/or its affiliates.
  *
  * Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
  */
@@ -15,18 +15,12 @@ class Action extends \Magento\Backend\Block\Widget\Grid\Column\Renderer\Action
     public function render(\Magento\Framework\DataObject $row)
     {
         $actions = [];
-        $actions[] = [
-            'url' => $this->getUrl('*/*/edit', ['id' => $row->getId()]),
-            'caption' => __('Edit')
-        ];
+
         $actions[] = [
             'url' => $this->getUrl('*/*/delete', ['id' => $row->getId()]),
             'caption' => __('Delete'),
         ];
-        $actions[] = [
-            'url' => $this->getUrl('*/*/settings', ['id' => $row->getId()]),
-            'caption' => __('Sync Settings'),
-        ];
+
         if (!$row->getIsActive()) {
             $actions[] = [
                'url' => $this->getUrl('*/*/register', ['id' => $row->getId()]),

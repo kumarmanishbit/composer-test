@@ -1,4 +1,9 @@
 <?php
+/*
+ * Copyright © 2021, 2022 Oracle and/or its affiliates.
+ *
+ * Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
+ */
 
 require_once 'vendor/autoload.php';
 
@@ -36,13 +41,6 @@ function run()
     $currentPackages = \GuzzleHttp\json_decode(file_get_contents('packages.json'), true);
 
     updateMetaVersion($targetVersion);
-
-//    $podEnvs = array(
-//        "q1p1" => "https://apps.p01.elqqa01.com",
-//        "q1p2" => "https://apps.p02.elqqa01.com",
-//        "q1p3" => "https://apps.p03.elqqa01.com",
-//        "q5p1" => "https://apps.p01.elqqa05.com",
-//        "pod2" => "https://apps.p02.eloqua.com");
 
     $podEnvs = array(
         "pod2" => "https://apps.p02.eloqua.com");
