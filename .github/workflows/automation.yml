@@ -282,8 +282,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
-          asset_path: ./pod2/package.json
-          asset_name: package.json
+          asset_path: ./pod2/packages.json
+          asset_name: packages.json
           asset_content_type: application/json
   # This workflow contains a single job called "build"
   build:
