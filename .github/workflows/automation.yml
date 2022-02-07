@@ -80,6 +80,7 @@ jobs:
       - name: Verify the files
         run: |
           echo "List the files"
+          cd pod2
           ls
       - name: Upload Release Asset
         if: ${{ env.RELEASE_ENV }} == 'prod'
