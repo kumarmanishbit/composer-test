@@ -131,7 +131,160 @@ jobs:
           asset_path: ./pod2/${{ env.VERSION }}/bronto-magento-module-connector-${{ env.VERSION }}.zip
           asset_name: bronto-magento-module-connector-${{ env.VERSION }}.zip
           asset_content_type: application/zip
-      
+      - name: Upload Release Asset 5
+        if: ${{ env.RELEASE_ENV }} == 'prod'
+        id: upload-release-asset-5
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/bronto-magento-module-contact-${{ env.VERSION }}.zip
+          asset_name: bronto-magento-module-contact-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset 6
+        if: ${{ env.RELEASE_ENV }} == 'prod'
+        id: upload-release-asset-6
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/bronto-magento-module-coupon-${{ env.VERSION }}.zip
+          asset_name: bronto-magento-module-coupon-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset 7
+        if: ${{ env.RELEASE_ENV }} == 'prod'
+        id: upload-release-asset-7
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/bronto-magento-module-email-${{ env.VERSION }}.zip
+          asset_name: bronto-magento-module-email-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset 8
+        if: ${{ env.RELEASE_ENV }} == 'prod'
+        id: upload-release-asset-8
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/bronto-magento-module-enterprise-${{ env.VERSION }}.zip
+          asset_name: bronto-magento-module-enterprise-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset 9
+        if: ${{ env.RELEASE_ENV }} == 'prod'
+        id: upload-release-asset-9
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/bronto-magento-module-integration-${{ env.VERSION }}.zip
+          asset_name: bronto-magento-module-integration-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset bronto-magento-module-inventory
+        if: ${{ env.RELEASE_ENV }} == 'prod'
+        id: upload-release-asset-bronto-magento-module-inventory
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/bronto-magento-module-inventory-${{ env.VERSION }}.zip
+          asset_name: bronto-magento-module-inventory-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset bronto-magento-module-m2
+        if: ${{ env.RELEASE_ENV }} == 'prod'
+        id: upload-release-asset-bronto-magento-module-m2
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/bronto-magento-module-m2-${{ env.VERSION }}.zip
+          asset_name: bronto-magento-module-m2-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset bronto-magento-module-notification
+        if: ${{ env.RELEASE_ENV }} == 'prod'
+        id: upload-release-asset-bronto-magento-module-notification
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/bronto-magento-module-notification-${{ env.VERSION }}.zip
+          asset_name: bronto-magento-module-notification-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset bronto-magento-module-optin
+        if: ${{ env.RELEASE_ENV }} == 'prod'
+        id: upload-release-asset-bronto-magento-module-optin
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/bronto-magento-module-optin-${{ env.VERSION }}.zip
+          asset_name: bronto-magento-module-optin-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset bronto-magento-module-order
+        if: ${{ env.RELEASE_ENV }} == 'prod'
+        id: upload-release-asset-bronto-magento-module-order
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/bronto-magento-module-order-${{ env.VERSION }}.zip
+          asset_name: bronto-magento-module-order-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset bronto-magento-module-product
+        if: ${{ env.RELEASE_ENV }} == 'prod'
+        id: upload-release-asset-bronto-magento-module-product
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/bronto-magento-module-product-${{ env.VERSION }}.zip
+          asset_name: bronto-magento-module-product-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset bronto-magento-module-rating
+        if: ${{ env.RELEASE_ENV }} == 'prod'
+        id: upload-release-asset-bronto-magento-module-rating
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/bronto-magento-module-rating-${{ env.VERSION }}.zip
+          asset_name: bronto-magento-module-rating-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset bronto-magento-module-redemption
+        if: ${{ env.RELEASE_ENV }} == 'prod'
+        id: upload-release-asset-bronto-magento-module-redemption
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/bronto-magento-module-redemption-${{ env.VERSION }}.zip
+          asset_name: bronto-magento-module-redemption-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset package json
+        if: ${{ env.RELEASE_ENV }} == 'prod'
+        id: upload-release-asset-package-json
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/package.json
+          asset_name: package.json
+          asset_content_type: application/json
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
