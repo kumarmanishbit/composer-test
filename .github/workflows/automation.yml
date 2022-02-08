@@ -56,7 +56,7 @@ jobs:
            echo env.RELEASE_ENV
            rm ./environment
       - name: Download site Content
-        if: ${{ env.RELEASE_ENV }} == 'prod'
+        if: ${{ env.RELEASE_ENV == 'prod' }}
         uses: actions/download-artifact@v2
         with:
           name: magento-extension
