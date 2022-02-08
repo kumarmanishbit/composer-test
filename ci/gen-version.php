@@ -85,7 +85,7 @@ function parseCommands() {
 function bumpVersion(SemVer\Version $latestVersion) {
 
     // Get last released version. We will resolve all commit message keywords since the last public release.
-    exec("git tag --sort=-taggerdate", $tags);
+    exec("git tag --sort=-creatordate", $tags);
     $lastRelease = array_shift($tags);
     while(stripos($lastRelease, '-rc')) {
         $lastRelease = array_shift($tags);
