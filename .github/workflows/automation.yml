@@ -40,7 +40,6 @@ jobs:
         
       - name: Generate version
         run: |
-           chmod -R 777 .
            php ci/gen-version.php  > ./version
            ls
            set +o pipefail
