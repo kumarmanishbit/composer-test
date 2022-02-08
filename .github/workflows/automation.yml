@@ -58,6 +58,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: magento-extension
+
       - name: Archive Release
         if: ${{ env.RELEASE_ENV }} == 'prod'
         uses: thedoctor0/zip-release@master
