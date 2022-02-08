@@ -37,6 +37,43 @@
                         "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
+            },
+            "3.1.2": {
+                "name": "bronto/magento-module-all",
+                "description": "Bronto Extension for Magento - All Modules",
+                "type": "metapackage",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "bronto/php-common-helper": "3.1.2",
+                    "bronto/magento-module-browse": "3.1.2",
+                    "bronto/magento-module-cart": "3.1.2",
+                    "bronto/magento-module-connector": "3.1.2",
+                    "bronto/magento-module-contact": "3.1.2",
+                    "bronto/magento-module-coupon": "3.1.2",
+                    "bronto/magento-module-email": "3.1.2",
+                    "bronto/magento-module-integration": "3.1.2",
+                    "bronto/magento-module-inventory": "3.1.2",
+                    "bronto/magento-module-m2": "3.1.2",
+                    "bronto/magento-module-notification": "3.1.2",
+                    "bronto/magento-module-order": "3.1.2",
+                    "bronto/magento-module-optin": "3.1.2",
+                    "bronto/magento-module-product": "3.1.2",
+                    "bronto/magento-module-rating": "3.1.2",
+                    "bronto/magento-module-redemption": "3.1.2"
+                },
+                "version": "3.1.2",
+                "dist": {
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/bronto-magento-module-all-3.1.2.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/packages.json"
+                    }
+                ]
             }
         },
         "bronto/magento-module-browse": {
@@ -69,6 +106,38 @@
                     {
                         "type": "composer",
                         "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
+                    }
+                ]
+            },
+            "3.1.2": {
+                "name": "bronto/magento-module-browse",
+                "description": "Bronto Extension for Magento - Browse Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-catalog": "^100|^101|^102|^103|^104",
+                    "bronto/magento-module-integration": "3.1.2"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Bronto\\Browse\\": ""
+                    }
+                },
+                "version": "3.1.2",
+                "dist": {
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/bronto-magento-module-browse-3.1.2.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/packages.json"
                     }
                 ]
             }
@@ -105,6 +174,38 @@
                         "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
+            },
+            "3.1.2": {
+                "name": "bronto/magento-module-cart",
+                "description": "Bronto Extension for Magento - Cart Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-sales": "^100|^101|^102|^103",
+                    "bronto/magento-module-integration": "3.1.2"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Bronto\\Cart\\": ""
+                    }
+                },
+                "version": "3.1.2",
+                "dist": {
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/bronto-magento-module-cart-3.1.2.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/packages.json"
+                    }
+                ]
             }
         },
         "bronto/magento-module-connector": {
@@ -136,6 +237,37 @@
                     {
                         "type": "composer",
                         "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
+                    }
+                ]
+            },
+            "3.1.2": {
+                "name": "bronto/magento-module-connector",
+                "description": "Bronto Extension for Magento - Connector Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "bronto/magento-module-m2": "3.1.2"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Bronto\\Connector\\": ""
+                    }
+                },
+                "version": "3.1.2",
+                "dist": {
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/bronto-magento-module-connector-3.1.2.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/packages.json"
                     }
                 ]
             }
@@ -172,6 +304,38 @@
                         "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
+            },
+            "3.1.2": {
+                "name": "bronto/magento-module-contact",
+                "description": "Bronto Extension for Magento - Contact Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-customer": "^100|^101|^102|^103",
+                    "bronto/magento-module-connector": "3.1.2"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Bronto\\Contact\\": ""
+                    }
+                },
+                "version": "3.1.2",
+                "dist": {
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/bronto-magento-module-contact-3.1.2.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/packages.json"
+                    }
+                ]
             }
         },
         "bronto/magento-module-coupon": {
@@ -204,6 +368,38 @@
                     {
                         "type": "composer",
                         "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
+                    }
+                ]
+            },
+            "3.1.2": {
+                "name": "bronto/magento-module-coupon",
+                "description": "Bronto Extension for Magento - Coupon Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-sales-rule": "^100|^101|^102",
+                    "bronto/magento-module-connector": "3.1.2"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Bronto\\Coupon\\": ""
+                    }
+                },
+                "version": "3.1.2",
+                "dist": {
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/bronto-magento-module-coupon-3.1.2.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/packages.json"
                     }
                 ]
             }
@@ -241,6 +437,39 @@
                         "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
+            },
+            "3.1.2": {
+                "name": "bronto/magento-module-email",
+                "description": "Bronto Extension for Magento - Email Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-email": "^100|^101",
+                    "bronto/magento-module-connector": "3.1.2",
+                    "zendframework/zend-mail": ">=2.4"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Bronto\\Email\\": ""
+                    }
+                },
+                "version": "3.1.2",
+                "dist": {
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/bronto-magento-module-email-3.1.2.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/packages.json"
+                    }
+                ]
             }
         },
         "bronto/magento-module-enterprise": {
@@ -264,6 +493,29 @@
                     {
                         "type": "composer",
                         "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
+                    }
+                ]
+            },
+            "3.1.2": {
+                "name": "bronto/magento-module-enterprise",
+                "description": "Bronto Extension for Magento - Enterprise Modules",
+                "type": "metapackage",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "bronto/magento-module-reward": "3.1.2",
+                    "bronto/magento-module-balance": "3.1.2"
+                },
+                "version": "3.1.2",
+                "dist": {
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/bronto-magento-module-enterprise-3.1.2.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/packages.json"
                     }
                 ]
             }
@@ -300,6 +552,38 @@
                         "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
+            },
+            "3.1.2": {
+                "name": "bronto/magento-module-integration",
+                "description": "Bronto Extension for Magento - Integrations Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-sales": "^100|^101|^102|^103",
+                    "bronto/magento-module-connector": "3.1.2"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Bronto\\Integration\\": ""
+                    }
+                },
+                "version": "3.1.2",
+                "dist": {
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/bronto-magento-module-integration-3.1.2.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/packages.json"
+                    }
+                ]
             }
         },
         "bronto/magento-module-inventory": {
@@ -332,6 +616,38 @@
                     {
                         "type": "composer",
                         "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
+                    }
+                ]
+            },
+            "3.1.2": {
+                "name": "bronto/magento-module-inventory",
+                "description": "Bronto Extension for Magento - Inventory Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-catalog-inventory": "^100|^101",
+                    "bronto/magento-module-product": "3.1.2"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Bronto\\Inventory\\": ""
+                    }
+                },
+                "version": "3.1.2",
+                "dist": {
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/bronto-magento-module-inventory-3.1.2.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/packages.json"
                     }
                 ]
             }
@@ -367,6 +683,37 @@
                         "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
+            },
+            "3.1.2": {
+                "name": "bronto/magento-module-m2",
+                "description": "Bronto Extension for Magento - Magento Library Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-sales": "^100|^101|^102|^103"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Bronto\\M2\\": ""
+                    }
+                },
+                "version": "3.1.2",
+                "dist": {
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/bronto-magento-module-m2-3.1.2.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/packages.json"
+                    }
+                ]
             }
         },
         "bronto/magento-module-notification": {
@@ -398,6 +745,37 @@
                     {
                         "type": "composer",
                         "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
+                    }
+                ]
+            },
+            "3.1.2": {
+                "name": "bronto/magento-module-notification",
+                "description": "Bronto Extension for Magento - Notification Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "bronto/magento-module-connector": "3.1.2"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Bronto\\Notification\\": ""
+                    }
+                },
+                "version": "3.1.2",
+                "dist": {
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/bronto-magento-module-notification-3.1.2.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/packages.json"
                     }
                 ]
             }
@@ -432,6 +810,38 @@
                     {
                         "type": "composer",
                         "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
+                    }
+                ]
+            },
+            "3.1.2": {
+                "name": "bronto/magento-module-optin",
+                "description": "Bronto Extension for Magento - Optin Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-newsletter": "^100|^101",
+                    "bronto/magento-module-connector": "3.1.2"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Bronto\\Optin\\": ""
+                    }
+                },
+                "version": "3.1.2",
+                "dist": {
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/bronto-magento-module-optin-3.1.2.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/packages.json"
                     }
                 ]
             }
@@ -469,6 +879,39 @@
                         "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
+            },
+            "3.1.2": {
+                "name": "bronto/magento-module-order",
+                "description": "Bronto Extension for Magento - Order Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-sales": "^100|^101|^102|^103",
+                    "bronto/magento-module-connector": "3.1.2",
+                    "bronto/magento-module-cart": "3.1.2"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Bronto\\Order\\": ""
+                    }
+                },
+                "version": "3.1.2",
+                "dist": {
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/bronto-magento-module-order-3.1.2.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/packages.json"
+                    }
+                ]
             }
         },
         "bronto/magento-module-product": {
@@ -501,6 +944,38 @@
                     {
                         "type": "composer",
                         "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
+                    }
+                ]
+            },
+            "3.1.2": {
+                "name": "bronto/magento-module-product",
+                "description": "Bronto Extension for Magento - Product Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-catalog": "^100|^101|^102|^103|^104",
+                    "bronto/magento-module-connector": "3.1.2"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Bronto\\Product\\": ""
+                    }
+                },
+                "version": "3.1.2",
+                "dist": {
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/bronto-magento-module-product-3.1.2.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/packages.json"
                     }
                 ]
             }
@@ -537,6 +1012,38 @@
                         "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
+            },
+            "3.1.2": {
+                "name": "bronto/magento-module-rating",
+                "description": "Bronto Extension for Magento - Rating Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-review": "^100|101",
+                    "bronto/magento-module-product": "3.1.2"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Bronto\\Rating\\": ""
+                    }
+                },
+                "version": "3.1.2",
+                "dist": {
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/bronto-magento-module-rating-3.1.2.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/packages.json"
+                    }
+                ]
             }
         },
         "bronto/magento-module-redemption": {
@@ -569,6 +1076,38 @@
                     {
                         "type": "composer",
                         "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
+                    }
+                ]
+            },
+            "3.1.2": {
+                "name": "bronto/magento-module-redemption",
+                "description": "Bronto Extension for Magento - Redemption Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-sales": "^100|^101|^102|^103",
+                    "bronto/magento-module-integration": "3.1.2"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Bronto\\Redemption\\": ""
+                    }
+                },
+                "version": "3.1.2",
+                "dist": {
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/bronto-magento-module-redemption-3.1.2.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/packages.json"
                     }
                 ]
             }
@@ -605,6 +1144,40 @@
                     {
                         "type": "composer",
                         "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
+                    }
+                ]
+            },
+            "3.1.2": {
+                "name": "bronto/php-common-helper",
+                "keywords": [
+                    "bronto",
+                    "common"
+                ],
+                "homepage": "https://github.com/bronto/php-common-helper",
+                "license": "Apache-2.0",
+                "require": {
+                    "php": ">=5.4"
+                },
+                "require-dev": {
+                    "phpunit/phpunit": "<5"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bronto\\": "src/Bronto"
+                    }
+                },
+                "scripts": {
+                    "test": "phpunit"
+                },
+                "version": "3.1.2",
+                "dist": {
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/bronto-php-common-helper-3.1.2.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/3.1.2/packages.json"
                     }
                 ]
             }
