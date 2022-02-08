@@ -62,7 +62,7 @@ jobs:
           name: magento-extension
 
       - name: Create Github Release
-        if: ${{ env.RELEASE_ENV }} == 'prod'
+        if: ${{ env.RELEASE_ENV == 'prod' }}
         id: create_release
         uses: actions/create-release@v1
         env:
@@ -77,7 +77,7 @@ jobs:
           echo "List the files "
           ls
       - name: Upload Release Asset bronto-magento-module-all
-        if: ${{ env.RELEASE_ENV }} == 'prod'
+        if: ${{ env.RELEASE_ENV == 'prod' }}
         id: upload-release-asset-bronto-magento-module-all
         uses: actions/upload-release-asset@v1
         env:
@@ -88,7 +88,7 @@ jobs:
           asset_name: bronto-magento-module-all-${{ env.VERSION }}.zip
           asset_content_type: application/zip
       - name: Upload Release Asset bronto-magento-module-browse
-        if: ${{ env.RELEASE_ENV }} == 'prod'
+        if: ${{ env.RELEASE_ENV == 'prod' }}
         id: upload-release-asset-bronto-magento-module-browse
         uses: actions/upload-release-asset@v1
         env:
@@ -99,7 +99,7 @@ jobs:
           asset_name: bronto-magento-module-browse-${{ env.VERSION }}.zip
           asset_content_type: application/zip
       - name: Upload Release Asset bronto-magento-module-cart
-        if: ${{ env.RELEASE_ENV }} == 'prod'
+        if: ${{ env.RELEASE_ENV == 'prod' }}
         id: upload-release-asset-bronto-magento-module-cart
         uses: actions/upload-release-asset@v1
         env:
@@ -110,7 +110,7 @@ jobs:
           asset_name: bronto-magento-module-cart-${{ env.VERSION }}.zip
           asset_content_type: application/zip
       - name: Upload Release Asset bronto-magento-module-connector
-        if: ${{ env.RELEASE_ENV }} == 'prod'
+        if: ${{ env.RELEASE_ENV == 'prod' }}
         id: upload-release-asset-bronto-magento-module-connector
         uses: actions/upload-release-asset@v1
         env:
@@ -121,7 +121,7 @@ jobs:
           asset_name: bronto-magento-module-connector-${{ env.VERSION }}.zip
           asset_content_type: application/zip
       - name: Upload Release Asset bronto-magento-module-contact
-        if: ${{ env.RELEASE_ENV }} == 'prod'
+        if: ${{ env.RELEASE_ENV == 'prod' }}
         id: upload-release-asset-bronto-magento-module-contact
         uses: actions/upload-release-asset@v1
         env:
@@ -132,7 +132,7 @@ jobs:
           asset_name: bronto-magento-module-contact-${{ env.VERSION }}.zip
           asset_content_type: application/zip
       - name: Upload Release Asset bronto-magento-module-coupon
-        if: ${{ env.RELEASE_ENV }} == 'prod'
+        if: ${{ env.RELEASE_ENV == 'prod' }}
         id: upload-release-asset-bronto-magento-module-coupon
         uses: actions/upload-release-asset@v1
         env:
@@ -143,7 +143,7 @@ jobs:
           asset_name: bronto-magento-module-coupon-${{ env.VERSION }}.zip
           asset_content_type: application/zip
       - name: Upload Release Asset bronto-magento-module-email
-        if: ${{ env.RELEASE_ENV }} == 'prod'
+        if: ${{ env.RELEASE_ENV == 'prod' }}
         id: upload-release-asset-bronto-magento-module-email
         uses: actions/upload-release-asset@v1
         env:
@@ -154,7 +154,7 @@ jobs:
           asset_name: bronto-magento-module-email-${{ env.VERSION }}.zip
           asset_content_type: application/zip
       - name: Upload Release Asset bronto-magento-module-enterprise
-        if: ${{ env.RELEASE_ENV }} == 'prod'
+        if: ${{ env.RELEASE_ENV == 'prod' }}
         id: upload-release-asset-bronto-magento-module-enterprise
         uses: actions/upload-release-asset@v1
         env:
@@ -165,7 +165,7 @@ jobs:
           asset_name: bronto-magento-module-enterprise-${{ env.VERSION }}.zip
           asset_content_type: application/zip
       - name: Upload Release Asset 9
-        if: ${{ env.RELEASE_ENV }} == 'prod'
+        if: ${{ env.RELEASE_ENV == 'prod' }}
         id: upload-release-asset-9
         uses: actions/upload-release-asset@v1
         env:
@@ -176,7 +176,7 @@ jobs:
           asset_name: bronto-magento-module-integration-${{ env.VERSION }}.zip
           asset_content_type: application/zip
       - name: Upload Release Asset bronto-magento-module-inventory
-        if: ${{ env.RELEASE_ENV }} == 'prod'
+        if: ${{ env.RELEASE_ENV == 'prod' }}
         id: upload-release-asset-bronto-magento-module-inventory
         uses: actions/upload-release-asset@v1
         env:
@@ -187,7 +187,7 @@ jobs:
           asset_name: bronto-magento-module-inventory-${{ env.VERSION }}.zip
           asset_content_type: application/zip
       - name: Upload Release Asset bronto-magento-module-m2
-        if: ${{ env.RELEASE_ENV }} == 'prod'
+        if: ${{ env.RELEASE_ENV == 'prod' }}
         id: upload-release-asset-bronto-magento-module-m2
         uses: actions/upload-release-asset@v1
         env:
@@ -198,7 +198,7 @@ jobs:
           asset_name: bronto-magento-module-m2-${{ env.VERSION }}.zip
           asset_content_type: application/zip
       - name: Upload Release Asset bronto-magento-module-notification
-        if: ${{ env.RELEASE_ENV }} == 'prod'
+        if: ${{ env.RELEASE_ENV == 'prod' }}
         id: upload-release-asset-bronto-magento-module-notification
         uses: actions/upload-release-asset@v1
         env:
@@ -209,7 +209,7 @@ jobs:
           asset_name: bronto-magento-module-notification-${{ env.VERSION }}.zip
           asset_content_type: application/zip
       - name: Upload Release Asset bronto-magento-module-optin
-        if: ${{ env.RELEASE_ENV }} == 'prod'
+        if: ${{ env.RELEASE_ENV == 'prod' }}
         id: upload-release-asset-bronto-magento-module-optin
         uses: actions/upload-release-asset@v1
         env:
@@ -220,7 +220,7 @@ jobs:
           asset_name: bronto-magento-module-optin-${{ env.VERSION }}.zip
           asset_content_type: application/zip
       - name: Upload Release Asset bronto-magento-module-order
-        if: ${{ env.RELEASE_ENV }} == 'prod'
+        if: ${{ env.RELEASE_ENV == 'prod' }}
         id: upload-release-asset-bronto-magento-module-order
         uses: actions/upload-release-asset@v1
         env:
@@ -231,7 +231,7 @@ jobs:
           asset_name: bronto-magento-module-order-${{ env.VERSION }}.zip
           asset_content_type: application/zip
       - name: Upload Release Asset bronto-magento-module-product
-        if: ${{ env.RELEASE_ENV }} == 'prod'
+        if: ${{ env.RELEASE_ENV == 'prod' }}
         id: upload-release-asset-bronto-magento-module-product
         uses: actions/upload-release-asset@v1
         env:
@@ -242,7 +242,7 @@ jobs:
           asset_name: bronto-magento-module-product-${{ env.VERSION }}.zip
           asset_content_type: application/zip
       - name: Upload Release Asset bronto-magento-module-rating
-        if: ${{ env.RELEASE_ENV }} == 'prod'
+        if: ${{ env.RELEASE_ENV == 'prod' }}
         id: upload-release-asset-bronto-magento-module-rating
         uses: actions/upload-release-asset@v1
         env:
@@ -253,7 +253,7 @@ jobs:
           asset_name: bronto-magento-module-rating-${{ env.VERSION }}.zip
           asset_content_type: application/zip
       - name: Upload Release Asset bronto-magento-module-redemption
-        if: ${{ env.RELEASE_ENV }} == 'prod'
+        if: ${{ env.RELEASE_ENV == 'prod' }}
         id: upload-release-asset-bronto-magento-module-redemption
         uses: actions/upload-release-asset@v1
         env:
@@ -264,7 +264,7 @@ jobs:
           asset_name: bronto-magento-module-redemption-${{ env.VERSION }}.zip
           asset_content_type: application/zip
       - name: Upload Release Asset bronto-php-common-helper
-        if: ${{ env.RELEASE_ENV }} == 'prod'
+        if: ${{ env.RELEASE_ENV == 'prod' }}
         id: upload-release-asset-bronto-php-common-helper
         uses: actions/upload-release-asset@v1
         env:
@@ -275,7 +275,7 @@ jobs:
           asset_name: bronto-php-common-helper-${{ env.VERSION }}.zip
           asset_content_type: application/zip
       - name: Upload Release Asset package json
-        if: ${{ env.RELEASE_ENV }} == 'prod'
+        if: ${{ env.RELEASE_ENV == 'prod' }}
         id: upload-release-asset-package-json
         uses: actions/upload-release-asset@v1
         env:
