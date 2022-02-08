@@ -72,10 +72,6 @@ jobs:
           release_name: Release ${{ env.VERSION }}
           draft: false
           prerelease: false
-      - name: Verify the files
-        run: |
-          echo "List the files "
-          ls
       - name: Upload Release Asset bronto-magento-module-all
         if: ${{ env.RELEASE_ENV == 'prod' }}
         id: upload-release-asset-bronto-magento-module-all
