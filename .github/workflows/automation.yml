@@ -52,7 +52,7 @@ jobs:
            env
            git status
            echo "Printing env.RELEASE_ENV name"
-           echo ${{ env.RELEASE_ENV }}
+           echo $RELEASE_ENV
            echo env.RELEASE_ENV
            rm ./environment
       - name: Download site Content
