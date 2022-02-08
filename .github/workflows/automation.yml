@@ -53,6 +53,7 @@ jobs:
            git status
            echo "Printing env.RELEASE_ENV name"
            echo ${{ env.RELEASE_ENV }}
+           echo env.RELEASE_ENV
            rm ./environment
       - name: Download site Content
         if: ${{ env.RELEASE_ENV }} == 'prod'
