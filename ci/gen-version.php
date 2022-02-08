@@ -131,7 +131,7 @@ function bumpVersion(SemVer\Version $latestVersion) {
             $release = "prod";
     }
 
-    file_put_contents("environment", $release);
+    file_put_contents("../environment", $release);
 
     if(!$newVersion->eq(new SemVer\Version($lastRelease))) {
         tagRepo($newVersion);
