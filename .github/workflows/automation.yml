@@ -57,7 +57,7 @@ jobs:
            echo "Printing env.RELEASE_ENV name"
            echo $RELEASE_ENV
            echo env.RELEASE_ENV
-           rm ./environment
+
       - name: Generate version
         run: |
           php ci/gen-version.php  > ./version
