@@ -9,7 +9,7 @@
                     "UPL-1.0"
                 ],
                 "require": {
-                    "bronto/php-common-helper": "^1",
+                    "bronto/php-common-helper": "1.0.0",
                     "bronto/magento-module-browse": "1.0.0",
                     "bronto/magento-module-cart": "1.0.0",
                     "bronto/magento-module-connector": "1.0.0",
@@ -34,7 +34,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
             }
@@ -68,7 +68,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
             }
@@ -102,7 +102,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
             }
@@ -135,7 +135,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
             }
@@ -169,7 +169,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
             }
@@ -203,7 +203,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
             }
@@ -238,7 +238,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
             }
@@ -263,7 +263,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
             }
@@ -297,7 +297,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
             }
@@ -331,7 +331,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
             }
@@ -364,7 +364,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
             }
@@ -397,7 +397,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
             }
@@ -431,7 +431,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
             }
@@ -466,7 +466,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
             }
@@ -500,7 +500,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
             }
@@ -534,7 +534,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
             }
@@ -568,7 +568,43 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/pod2"
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
+                    }
+                ]
+            }
+        },
+        "bronto/php-common-helper": {
+            "1.0.0": {
+                "name": "bronto/php-common-helper",
+                "keywords": [
+                    "bronto",
+                    "common"
+                ],
+                "homepage": "https://github.com/bronto/php-common-helper",
+                "license": "Apache-2.0",
+                "require": {
+                    "php": ">=5.4"
+                },
+                "require-dev": {
+                    "phpunit/phpunit": "<5"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bronto\\": "src/Bronto"
+                    }
+                },
+                "scripts": {
+                    "test": "phpunit"
+                },
+                "version": "1.0.0",
+                "dist": {
+                    "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/bronto-php-common-helper-1.0.0.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/kumarmanishbit/composer-test/releases/download/1.0.0/packages.json"
                     }
                 ]
             }

@@ -233,7 +233,7 @@ function updateModuleComposer(array &$packageInfo, string $moduleDir, $composerJ
 
     foreach ($packageInfo['require'] as $dependencyName => $version) {
         if ($dependencyName == 'bronto/php-common-helper') {
-            continue;
+           // continue;
         }
 
         // Only update versions of Bronto dependencies
