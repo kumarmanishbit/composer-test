@@ -52,6 +52,7 @@ jobs:
            echo "VERSION=$VERSION" >> $GITHUB_ENV
            [ -f ./environment ] && export RELEASE_ENV=$(cat ./environment)
            echo "RELEASE_ENV=RELEASE_ENV" >> $GITHUB_ENV
+           echo "RELEASE_ENV=${{ needs.build.outputs.output1 }}" >> $GITHUB_ENV
            echo "Printing the env name"
            env
            git status
