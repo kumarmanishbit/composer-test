@@ -7,7 +7,7 @@
     ],
     "require": {
         "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
-        "bronto/magento-module-connector": "1.0.0"
+        "bronto/magento-module-connector": "3.2.0"
     },
     "autoload": {
         "files": [
@@ -17,5 +17,5 @@
             "Bronto\\Notification\\": ""
         }
     },
-    "version": "1.0.0"
+    "version": "3.2.0"
 }

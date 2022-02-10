@@ -11,7 +11,7 @@ namespace Bronto\Connector\Api\Data;
  * Interface TidInterface
  * 
  * @api
- * @package Common\Connector\Api\Data
+ * @package Bronto\Connector\Api\Data
  */
 interface TidInterface
 {

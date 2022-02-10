@@ -12,7 +12,7 @@ use Magento\Framework\Notification\MessageInterface;
 
 /**
  * Class VersionInbox
- * @package Common\Notification\Model
+ * @package Bronto\Notification\Model
  */
 class VersionInbox
 {

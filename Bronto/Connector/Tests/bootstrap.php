@@ -6,4 +6,4 @@
  */
 
 $loader = require __DIR__ . '/../../../vendor/autoload.php';
-$loader->addPsr4('Common\\Connector\\', __DIR__ . '/../');
+$loader->addPsr4('Bronto\\Connector\\', __DIR__ . '/../');

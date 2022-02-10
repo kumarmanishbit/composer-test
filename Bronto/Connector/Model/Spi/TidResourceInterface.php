@@ -11,7 +11,7 @@ use Bronto\Connector\Api\Data\TidInterface;
 
 /**
  * Interface TidResourceInterface
- * @package Common\Connector\Model\Spi
+ * @package Bronto\Connector\Model\Spi
  */
 interface TidResourceInterface
 {

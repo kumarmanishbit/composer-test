@@ -11,7 +11,7 @@ use Bronto\Connector\Helper\Data as QueueHelper;
 
 /**
  * Class DataTest
- * @package Common\Connector\Tests\Unit\Helper
+ * @package Bronto\Connector\Tests\Unit\Helper
  */
 class DataTest extends \PHPUnit_Framework_TestCase
 {

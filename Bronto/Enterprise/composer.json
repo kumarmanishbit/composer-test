@@ -6,8 +6,8 @@
         "UPL-1.0"
     ],
     "require": {
-        "bronto/magento-module-reward": "1.0.0",
-        "bronto/magento-module-balance": "1.0.0"
+        "bronto/magento-module-reward": "3.2.0",
+        "bronto/magento-module-balance": "3.2.0"
     },
-    "version": "1.0.0"
+    "version": "3.2.0"
 }

@@ -125,7 +125,7 @@ class Connector implements SectionSourceInterface
     /**
      * @param \Magento\Store\Api\Data\StoreInterface
      *  |\Magento\Store\Api\Data\Website
-     *  |\Common\M2\Connector\RegistrationInterface
+     *  |\Bronto\M2\Connector\RegistrationInterface
      * $entity
      *
      * @throws \InvalidArgumentException

@@ -18,7 +18,7 @@ use Magento\Framework\App\CacheInterface;
 
 /**
  * Class VersionFeed
- * @package Common\Notification\Model
+ * @package Bronto\Notification\Model
  */
 class VersionFeed extends \Magento\Framework\Model\AbstractModel
 {

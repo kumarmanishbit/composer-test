@@ -22,7 +22,7 @@ use Magento\Store\Model\StoreManager;
 
 /**
  * Class Get
- * @package Common\Cart\Plugin
+ * @package Bronto\Cart\Plugin
  */
 class Get
 {

@@ -17,7 +17,7 @@ use Magento\Sales\Api\Data\OrderExtensionFactory;
 
 /**
  * Class GetList
- * @package Common\Order\Plugin
+ * @package Bronto\Order\Plugin
  */
 class GetList
 {

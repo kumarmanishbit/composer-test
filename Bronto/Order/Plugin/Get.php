@@ -21,7 +21,7 @@ use Magento\Sales\Api\OrderRepositoryInterface;
 
 /**
  * Class Get
- * @package Common\Order\Plugin
+ * @package Bronto\Order\Plugin
  */
 class Get
 {

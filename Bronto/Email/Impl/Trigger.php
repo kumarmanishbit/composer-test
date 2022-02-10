@@ -113,7 +113,7 @@ class Trigger implements \Bronto\M2\Email\TriggerManagerInterface
      */
     public function createSource($trigger, $message)
     {
-        $classPath = 'Common\M2\Email\Event\Trigger\%s';
+        $classPath = 'Bronto\M2\Email\Event\Trigger\%s';
         $className = sprintf($classPath, ucfirst($trigger->getMessageType()));
         return $this->_objectManager->create($className, [
             'message' => $message,

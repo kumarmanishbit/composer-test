@@ -8,7 +8,7 @@
     "require": {
         "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
         "magento/module-sales": "^100|^101|^102|^103",
-        "bronto/magento-module-integration": "1.0.0"
+        "bronto/magento-module-integration": "3.2.0"
     },
     "autoload": {
         "files": [
@@ -18,5 +18,5 @@
             "Bronto\\Cart\\": ""
         }
     },
-    "version": "1.0.0"
+    "version": "3.2.0"
 }

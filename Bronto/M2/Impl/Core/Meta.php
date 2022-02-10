@@ -12,7 +12,7 @@ use Magento\Backend\Setup\ConfigOptionsList;
 class Meta implements \Bronto\M2\Core\MetaInterface
 {
 
-    const EXTENSION_VERSION = '1.0.0';
+    const EXTENSION_VERSION = '3.2.0';
 
     protected $_meta;
     protected $_config;

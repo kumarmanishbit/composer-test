@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * Class DataTest
- * @package Common\Connector\Tests\Unit\Helper
+ * @package Bronto\Connector\Tests\Unit\Helper
  */
 class DataTest extends TestCase
 {
