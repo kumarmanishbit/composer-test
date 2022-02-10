@@ -160,7 +160,7 @@ abstract class ExtensionAbstract extends \Bronto\M2\Connector\Discovery\Advanced
 
         $observer->getEndpoint()->addFieldToScript('historical', [
             'id' => 'setStatus',
-            'name' => 'Set Status In Bronto',
+            'name' => 'Set Status In Common',
             'type' => 'select',
             'position' => 5,
             'typeProperties' => [
@@ -251,7 +251,7 @@ abstract class ExtensionAbstract extends \Bronto\M2\Connector\Discovery\Advanced
                 ],
                 [
                     'id' => 'syncUnsubs',
-                    'name' => 'Sync Bronto Unsubscribes',
+                    'name' => 'Sync Common Unsubscribes',
                     'type' => 'boolean',
                     'required' => true,
                     'typeProperties' => [ 'default' => true ]

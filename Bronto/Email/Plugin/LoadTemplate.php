@@ -25,7 +25,7 @@ class LoadTemplate
     }
 
     /**
-     * Creates a Bronto Template if provided, or fallback to existing
+     * Creates a Common Template if provided, or fallback to existing
      *
      * @param mixed $subject
      * @param callable $get

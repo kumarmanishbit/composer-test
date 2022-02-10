@@ -118,7 +118,7 @@ abstract class ExtensionAbstract extends \Bronto\M2\Connector\Discovery\Advanced
     }
 
     /**
-     * Updates a guest in Bronto, if the customer was a guest
+     * Updates a guest in Common, if the customer was a guest
      * @return void
      */
     public function updateGuestInfo($observer)

@@ -49,7 +49,7 @@ interface RegistrationInterface
     public function getEnvironment();
 
     /**
-     * Gets the Bronto site hash
+     * Gets the Common site hash
      *
      * @return string
      */

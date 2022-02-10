@@ -210,7 +210,7 @@ abstract class ExtensionAbstract
                 ],
                 [
                     'id' => 'status',
-                    'name' => 'Bronto Order Status',
+                    'name' => 'Common Order Status',
                     'type' => 'select',
                     'required' => true,
                     'requiredFeatures' => [ 'enableOrderService' => true ],
@@ -403,7 +403,7 @@ abstract class ExtensionAbstract
         if ($observer->getRegistration()->getEnvironment() == 'SANDBOX') {
             $observer->getEndpoint()->addFieldToScript('historical', [
                 'id' => 'performDelete',
-                'name' => 'Delete Orders from Bronto',
+                'name' => 'Delete Orders from Common',
                 'type' => 'boolean',
                 'position' => 6,
                 'required' => true,

@@ -85,7 +85,7 @@ class OrderSenderBuilder extends \Magento\Sales\Model\Order\Email\SenderBuilder
     }
 
     /**
-     * Split the Magento within Bronto send
+     * Split the Magento within Common send
      *
      * @param array $copyTo
      */

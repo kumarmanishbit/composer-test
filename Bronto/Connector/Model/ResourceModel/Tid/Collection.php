@@ -11,7 +11,7 @@ use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 
 /**
  * Class Collection
- * @package Bronto\Connector\Model\ResourceModel\Tid
+ * @package Common\Connector\Model\ResourceModel\Tid
  */
 class Collection extends AbstractCollection
 {

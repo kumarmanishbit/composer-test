@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * Class DataTest
- * @package Bronto\Connector\Tests\Unit\Helper
+ * @package Common\Connector\Tests\Unit\Helper
  */
 class DataTest extends TestCase
 {
@@ -18,7 +18,7 @@ class DataTest extends TestCase
     public function dataTestPerserveFixedProperties()
     {
         $data = [];
-        $description = 'Tests data similar to what is stored as a Bronto Record';
+        $description = 'Tests data similar to what is stored as a Common Record';
         $fixedProperties = [
             'order' => [
                 'tid' => 0

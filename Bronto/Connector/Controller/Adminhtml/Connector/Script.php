@@ -28,7 +28,7 @@ class Script extends \Bronto\Connector\Controller\Adminhtml\Connector
                 $data = $this->_encoder->decode($content);
             }
             $this->_logger->info(
-                "Executing Bronto script {$extensionId}_{$scriptId}. " . $this->getMemoryUsageString()
+                "Executing Common script {$extensionId}_{$scriptId}. " . $this->getMemoryUsageString()
             );
             /* @param $executionResults [] */
             // we are executing script here
@@ -38,7 +38,7 @@ class Script extends \Bronto\Connector\Controller\Adminhtml\Connector
                 'data' => $data
             ]);
             $this->_logger->info(
-                "Completed Bronto script {$extensionId}_{$scriptId} execution. " . $this->getMemoryUsageString()
+                "Completed Common script {$extensionId}_{$scriptId} execution. " . $this->getMemoryUsageString()
             );
             return $executionResults;
         }

@@ -30,7 +30,7 @@ class Settings extends \Bronto\M2\Core\Config\ContainerAbstract implements Setti
     protected $currency;
 
     /**
-     * Maps to Bronto status `shipped`
+     * Maps to Common status `shipped`
      *
      * @var array
      */

@@ -15,7 +15,7 @@ use Magento\Framework\Model\AbstractModel;
 /**
  * Class Tid
  * 
- * @package Bronto\Connector\Model
+ * @package Common\Connector\Model
  */
 class Tid extends AbstractExtensibleModel implements TidInterface
 {

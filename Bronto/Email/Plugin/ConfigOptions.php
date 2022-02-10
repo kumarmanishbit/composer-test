@@ -53,7 +53,7 @@ class ConfigOptions
         }
         $mappingId = $this->_helper->getLookup($templateId, $scopeType, $scopeId, true);
         if ($mappingId) {
-            $label = __('-- Configured within Bronto Connector --');
+            $label = __('-- Configured within Common Connector --');
             return [['value' => $templateId, 'label' => $label ]];
         } else {
             return $options();

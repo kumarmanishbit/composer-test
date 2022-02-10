@@ -114,7 +114,7 @@ class InstallSchema implements InstallSchemaInterface
               $installer->getIdxName(self::TRIGGER_TABLE, ['site_id', 'sent_message', 'triggered_at']),
               ['site_id', 'sent_message', 'triggered_at']
           )
-          ->setComment('Bronto Magento Email Trigger Queue');
+          ->setComment('Common Magento Email Trigger Queue');
         $installer->getConnection()->createTable($table);
         $installer->endSetup();
     }

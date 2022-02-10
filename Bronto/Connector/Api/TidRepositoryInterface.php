@@ -16,7 +16,7 @@ use Bronto\Connector\Model\ResourceModel\Tid\Collection;
  * TID CRUD Interface
  *
  * @api
- * @package Bronto\Connector\Api
+ * @package Common\Connector\Api
  */
 interface TidRepositoryInterface
 {

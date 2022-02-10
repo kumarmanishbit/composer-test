@@ -51,7 +51,7 @@ interface SettingsInterface extends \Bronto\M2\Connector\Event\HelperInterface
     public function getCleanupThreshold($scopeType = 'default', $scopeId = null);
 
     /**
-     * Is Sending allowed to happen through Bronto
+     * Is Sending allowed to happen through Common
      *
      * @param string $messageType
      * @param string $scopeType
@@ -131,7 +131,7 @@ interface SettingsInterface extends \Bronto\M2\Connector\Event\HelperInterface
     public function getExclusionLists($messageType, $scopeType = 'default', $scopeId = null);
 
     /**
-     * Gets the Bronto message for the given message type
+     * Gets the Common message for the given message type
      *
      * @param string $messageType
      * @param string $messageId

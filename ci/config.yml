@@ -4,4 +4,4 @@ cdn_urls:
 
 paths:
     build: "builds"
-    module: "Bronto"
+    module: "Common"

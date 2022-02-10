@@ -20,7 +20,7 @@ define([
                         }
                     );
                 } else {
-                    console.warn('Bronto Redemption data could not be found');
+                    console.warn('Common Redemption data could not be found');
                 }
             }
         }

@@ -17,7 +17,7 @@ interface FilterEventInterface
     public function eventFilter(\Magento\Framework\Event\Observer $observer);
 
     /**
-     * Implementors will add Bronto tags $name => $content
+     * Implementors will add Common tags $name => $content
      *
      * @param array $message
      * @param array $templateVars

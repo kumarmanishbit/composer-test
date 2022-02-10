@@ -12,7 +12,7 @@ use Magento\Framework\Notification\MessageInterface;
 
 /**
  * Class VersionSystemMessage
- * @package Bronto\Notification\Model\System\Message
+ * @package Common\Notification\Model\System\Message
  */
 class VersionSystemMessage implements MessageInterface
 {

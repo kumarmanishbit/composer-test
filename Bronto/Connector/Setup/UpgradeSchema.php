@@ -14,7 +14,7 @@ use Magento\Framework\DB\Ddl\Table;
 
 /**
  * Class UpgradeSchema
- * @package Bronto\Connector\Setup
+ * @package Common\Connector\Setup
  */
 class UpgradeSchema implements UpgradeSchemaInterface
 {

@@ -26,7 +26,7 @@ interface SettingsInterface extends \Bronto\M2\Connector\Event\HelperInterface
     const VALIDATION_HASH = '{VALIDATION_HASH}';
 
     /**
-     * Determines if Bronto unsubscriptions should be synced
+     * Determines if Common unsubscriptions should be synced
      *
      * @param string $scopeType
      * @param mixed $scopeId

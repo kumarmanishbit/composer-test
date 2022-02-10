@@ -197,7 +197,7 @@ abstract class ExtensionAbstract
     }
 
     /**
-     * Observe the Bronto redirect to apply coupons
+     * Observe the Common redirect to apply coupons
      *
      * @param mixed $observer
      * @return void
@@ -303,7 +303,7 @@ abstract class ExtensionAbstract
     }
 
     /**
-     * Observe the Bronto redirect to apply coupons
+     * Observe the Common redirect to apply coupons
      *
      * @param mixed $observer
      * @return void

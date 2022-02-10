@@ -26,7 +26,7 @@ class Edit extends \Bronto\Connector\Controller\Adminhtml\Registration
     }
 
     /**
-     * Edit Bronto Registration
+     * Edit Common Registration
      *
      * @return void
      */
@@ -47,7 +47,7 @@ class Edit extends \Bronto\Connector\Controller\Adminhtml\Registration
         } else {
             $this->_view->getPage()->getConfig()->getTitle()->prepend(__('New Registration'));
             $this->_addBreadcrumb(
-                __('Create Bronto Registration'),
+                __('Create Common Registration'),
                 __('New Registration')
             );
         }

@@ -423,7 +423,7 @@ abstract class ExtensionAbstract extends \Bronto\M2\Connector\Discovery\Advanced
               'default' => 'magento',
               'options' => [
                   ['id' => 'magento', 'name' => 'Magento'],
-                  ['id' => 'bronto', 'name' => 'Bronto']
+                  ['id' => 'bronto', 'name' => 'Common']
               ]
             ],
             'depends' => [

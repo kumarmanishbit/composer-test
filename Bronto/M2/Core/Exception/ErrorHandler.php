@@ -10,7 +10,7 @@ namespace Bronto\M2\Core\Exception;
 /**
  * Class ErrorHandler
  *
- * @package Bronto\M2\Core\Exception
+ * @package Common\M2\Core\Exception
  */
 class ErrorHandler
 {

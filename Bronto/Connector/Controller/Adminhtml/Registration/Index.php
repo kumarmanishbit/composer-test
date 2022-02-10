@@ -22,8 +22,8 @@ class Index extends \Bronto\Connector\Controller\Adminhtml\Registration
             $this->_setActiveMenu('Bronto_Connector::registration');
             $this->_view->getPage()->getConfig()->getTitle()->prepend(__('Responsys Connector'));
             $this->_addBreadcrumb(
-                __('Bronto Connector Registrations'),
-                __('Bronto Connector Registrations')
+                __('Common Connector Registrations'),
+                __('Common Connector Registrations')
             );
             $this->_view->renderLayout();
         }

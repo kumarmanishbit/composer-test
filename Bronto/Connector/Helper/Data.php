@@ -48,7 +48,7 @@ class Data extends AbstractHelper
         $error = error_get_last();
         if ($error !== null && $error["type"] === E_ERROR) {
             $logger->critical(sprintf(
-                "Fatal error occurred while handling a Bronto request -- %s(%s): %s",
+                "Fatal error occurred while handling a Common request -- %s(%s): %s",
                 $error["file"],
                 $error["line"],
                 $error["message"]

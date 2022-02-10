@@ -107,7 +107,7 @@ interface SettingsInterface extends \Bronto\M2\Connector\Event\HelperInterface
     public function getDeleteStatus($scope = 'default', $scopeId = null);
 
     /**
-     * Gets the Bronto order status to add
+     * Gets the Common order status to add
      *
      * @param string $scope
      * @param int $scopeId
@@ -116,7 +116,7 @@ interface SettingsInterface extends \Bronto\M2\Connector\Event\HelperInterface
     public function getOrderStatus($scope = 'default', $scopeId = null);
 
     /**
-     * Determines if the order is in a Magento Order state that is considered 'shipped' by Bronto
+     * Determines if the order is in a Magento Order state that is considered 'shipped' by Common
      *
      * @param OrderInterface $order
      * @return boolean

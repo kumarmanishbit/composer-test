@@ -14,7 +14,7 @@ use Magento\Framework\Event\ObserverInterface;
 
 /**
  * Class PredispatchAdminActionControllerObserver
- * @package Bronto\Notification\Model\Observer
+ * @package Common\Notification\Model\Observer
  */
 class PredispatchAdminActionControllerObserver implements ObserverInterface
 {

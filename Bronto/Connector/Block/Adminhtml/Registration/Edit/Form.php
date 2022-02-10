@@ -90,7 +90,7 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
                 0 => __('No'),
                 1 => __('Yes')
             ],
-            'note' => __('Bronto Connector will required network communication to the admin store. If your admin store is protected by Basic Auth, then select <em>Yes</em>, and fill in the username and password below. If your admin store is protected by a firewall, then you must allow network communication for incoming and outgoing requests to <strong>middleware.brontops.com</strong> and <strong>sarlacc.brontops.com</strong>. Your credentials are only used for Bronto Connector communication on encrypted channels.')
+            'note' => __('Common Connector will required network communication to the admin store. If your admin store is protected by Basic Auth, then select <em>Yes</em>, and fill in the username and password below. If your admin store is protected by a firewall, then you must allow network communication for incoming and outgoing requests to <strong>middleware.brontops.com</strong> and <strong>sarlacc.brontops.com</strong>. Your credentials are only used for Common Connector communication on encrypted channels.')
         ]);
 
         $username = $fieldset->addField('username', 'text', [

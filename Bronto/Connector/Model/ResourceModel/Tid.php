@@ -13,7 +13,7 @@ use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
 
 /**
  * Class Tid
- * @package Bronto\Connector\Model\ResourceModel
+ * @package Common\Connector\Model\ResourceModel
  */
 class Tid extends AbstractDb implements TidResourceInterface
 {

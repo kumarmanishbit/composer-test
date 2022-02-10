@@ -20,7 +20,7 @@ use Zend\Loader\Exception\DomainException;
 /**
  * Class TidRepository
  *
- * @package Bronto\Connector\Model
+ * @package Common\Connector\Model
  */
 class TidRepository implements TidRepositoryInterface
 {

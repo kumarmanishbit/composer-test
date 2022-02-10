@@ -11,7 +11,7 @@ use Bronto\Connector\Helper\Data as QueueHelper;
 
 /**
  * Class DataTest
- * @package Bronto\Connector\Tests\Unit\Helper
+ * @package Common\Connector\Tests\Unit\Helper
  */
 class DataTest extends \PHPUnit_Framework_TestCase
 {
@@ -35,7 +35,7 @@ class DataTest extends \PHPUnit_Framework_TestCase
     public function dataTestPerserveFixedProperties()
     {
         $data = [];
-        $description = 'Tests data similar to what is stored as a Bronto Record';
+        $description = 'Tests data similar to what is stored as a Common Record';
         $fixedProperties = [
             'order' => [
                 'tid' => 0

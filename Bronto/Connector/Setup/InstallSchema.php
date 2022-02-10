@@ -141,7 +141,7 @@ class InstallSchema implements InstallSchemaInterface
               ['scope', 'scope_id'],
               ['type' => AdapterInterface::INDEX_TYPE_UNIQUE]
           )
-          ->setComment('Bronto Magento Connector Registration');
+          ->setComment('Common Magento Connector Registration');
         $installer->getConnection()->createTable($table);
 
         $table = $installer->getConnection()
@@ -194,7 +194,7 @@ class InstallSchema implements InstallSchemaInterface
               $installer->getIdxName(self::EVENT_QUEUE_TABLE, ['site_id', 'event_type']),
               ['site_id', 'event_type']
           )
-          ->setComment('Bronto Event Queue Table');
+          ->setComment('Common Event Queue Table');
         $installer->getConnection()->createTable($table);
 
         self::createTidTable($setup);
@@ -262,7 +262,7 @@ class InstallSchema implements InstallSchemaInterface
                     $setup->getIdxName(self::TID_TABLE, ['order_id']),
                     ['order_id']
                 )
-                ->setComment('Bronto TID Table');
+                ->setComment('Common TID Table');
             $setup->getConnection()->createTable($table);
         }
     }

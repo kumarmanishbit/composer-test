@@ -56,7 +56,7 @@ class Redemption extends \Magento\Framework\View\Element\Template implements Sec
     }
 
     /**
-     * Gets the Bronto site hash for communication
+     * Gets the Common site hash for communication
      *
      * @return string
      */

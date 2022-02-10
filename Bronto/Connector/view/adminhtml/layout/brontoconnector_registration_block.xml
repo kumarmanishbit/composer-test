@@ -68,7 +68,7 @@
                             <argument name="filter" xsi:type="string">0</argument>
                             <argument name="sortable" xsi:type="string">0</argument>
                             <argument name="no_link" xsi:type="string">1</argument>
-                            <argument name="renderer" xsi:type="string">Bronto\Connector\Block\Adminhtml\Registration\Grid\Renderer\Scope</argument>
+                            <argument name="renderer" xsi:type="string">Common\Connector\Block\Adminhtml\Registration\Grid\Renderer\Scope</argument>
                             <argument name="header_css_class" xsi:type="string">col-scope</argument>
                             <argument name="column_css_class" xsi:type="string">col-scope</argument>
                         </arguments>

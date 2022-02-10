@@ -13,12 +13,12 @@ use Bronto\M2\Impl\Core\Logger;
 abstract class ExtensionAbstract implements \Bronto\M2\Connector\Discovery\ExtensionInterface, \Bronto\M2\Connector\Discovery\GroupInterface
 {
     const EXT_DESCRIPTION_SCRIPT_MANAGER =  "Includes the Script Manager on each page of your site by default. "
-        . "Enable and configure Bronto features using Script Manager from the "
+        . "Enable and configure Common features using Script Manager from the "
         . "<a href='https://app.bronto.com/mail/pref/script_manager/'>Script Manager settings page</a>.";
 
-    const EXT_DESCRIPTION_CART_RECOVERY = 'Send cart data from your Magento site to Bronto.';
+    const EXT_DESCRIPTION_CART_RECOVERY = 'Send cart data from your Magento site to Common.';
 
-    const EXT_DESCRIPTION_LEGACY_INTEGRATIONS = 'Custom integrations for Bronto features. These integrations do '
+    const EXT_DESCRIPTION_LEGACY_INTEGRATIONS = 'Custom integrations for Common features. These integrations do '
         . 'not need Script Manager snippet.';
 
     /** @var DriverInterface  */

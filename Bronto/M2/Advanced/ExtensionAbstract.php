@@ -539,7 +539,7 @@ abstract class ExtensionAbstract implements \Bronto\M2\Connector\Discovery\Exten
                 ],
                 [
                     'id' => 'performImport',
-                    'name' => 'Import to Bronto',
+                    'name' => 'Import to Common',
                     'type' => 'boolean',
                     'position' => 20,
                     'typeProperties' => [ 'default' => false ]

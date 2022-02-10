@@ -29,7 +29,7 @@ interface SettingsInterface
     const COOKIE_TID_PREFIX = 'tid_';
 
     /**
-     * Gets the Bronto site hash for the registered scope
+     * Gets the Common site hash for the registered scope
      *
      * @param string $scope
      * @param int $scopeId
@@ -38,7 +38,7 @@ interface SettingsInterface
     public function getSiteId($scope = 'default', $scopeId = null);
 
     /**
-     * Gets the Bronto maskId for authenticated imports
+     * Gets the Common maskId for authenticated imports
      *
      * @param string $scope
      * @param int $scopeId

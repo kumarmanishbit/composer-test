@@ -18,7 +18,7 @@ use Magento\Framework\App\CacheInterface;
 
 /**
  * Class VersionFeed
- * @package Bronto\Notification\Model
+ * @package Common\Notification\Model
  */
 class VersionFeed extends \Magento\Framework\Model\AbstractModel
 {
@@ -86,7 +86,7 @@ class VersionFeed extends \Magento\Framework\Model\AbstractModel
             $this->setReleaseInfoResponse($request->respond());
         } catch (\Exception $e) {
             $this->_logger->critical(
-                'Could not get Bronto release info:' . PHP_EOL
+                'Could not get Common release info:' . PHP_EOL
                 . $e->getMessage() . PHP_EOL
                 . $e->getTraceAsString()
             );

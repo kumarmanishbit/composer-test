@@ -14,6 +14,6 @@ class CurlAdapter
      */
     public function aroundCreateRequest($subject, $createReq, $method, $uri)
     {
-        return new \Bronto\Transfer\Curl\Request($method, $uri, new \Bronto\DataObject());
+        return new \Bronto\M2\Common\Transfer\Curl\Request($method, $uri, new \Bronto\DataObject());
     }
 }

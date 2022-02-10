@@ -134,9 +134,9 @@ class Platform implements PlatformInterface
             $result = $response->code() < 300;
             if (!$result) {
                 $this->_logger->info(sprintf(
-                    'Unsuccessful Bronto POST: [%s] %s', $response->code(), $response->body()
+                    'Unsuccessful Common POST: [%s] %s', $response->code(), $response->body()
                 ));
-                $this->_logger->debug(sprintf("Unsuccessful Bronto POST details: \n %s", var_export($request, true)));
+                $this->_logger->debug(sprintf("Unsuccessful Common POST details: \n %s", var_export($request, true)));
             }
         } catch (\Exception $e) {
             $this->_logger->critical($e);

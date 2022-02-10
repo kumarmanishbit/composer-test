@@ -9,7 +9,7 @@ namespace Bronto\Cart\Model\Observer;
 
 /**
  * Class AfterCheckoutEmailCaptureObserver
- * @package Bronto\Cart\Model\Observer
+ * @package Common\Cart\Model\Observer
  */
 class AfterCheckoutEmailCaptureObserver extends AfterSubscribeObserver
 {

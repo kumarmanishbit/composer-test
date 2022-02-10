@@ -68,7 +68,7 @@ class Manager implements ManagerInterface
     protected function _createNotification($item)
     {
         if ($this->_isAlert($item)) {
-            $title = "[Bronto Notification] {$item['title']}";
+            $title = "[Common Notification] {$item['title']}";
             return $this->_inbox->addNotice($title, $item['description'], $item['url']);
         }
         return true;

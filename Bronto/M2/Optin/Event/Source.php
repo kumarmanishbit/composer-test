@@ -88,7 +88,7 @@ class Source implements \Bronto\M2\Connector\Event\SourceInterface, \Bronto\M2\C
     }
 
     /**
-     * Gets the Bronto status for the Magento code
+     * Gets the Common status for the Magento code
      *
      * @param mixed $subscriber
      * @return string

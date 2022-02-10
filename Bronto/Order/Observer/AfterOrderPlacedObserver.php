@@ -20,7 +20,7 @@ use Magento\Store\Model\StoreManagerInterface;
  *
  * Instructions for after an order is placed
  *
- * @package Bronto\Order\Observer
+ * @package Common\Order\Observer
  */
 class AfterOrderPlacedObserver extends ObserverAbstract
 {

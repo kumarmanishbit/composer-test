@@ -42,7 +42,7 @@ interface TemplateFilterInterface
     public function getReplacedTags();
 
     /**
-     * Transforms the context into Bronto API tags
+     * Transforms the context into Common API tags
      *
      * @param array $message
      * @return array

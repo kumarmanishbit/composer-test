@@ -9,7 +9,7 @@ namespace Bronto\Cart\Model\Observer;
 
 /**
  * Class AfterSubscribeObserver
- * @package Bronto\Cart\Model\Observer
+ * @package Common\Cart\Model\Observer
  */
 class AfterSubscribeObserver extends AfterBrontoSiteFiddleObserver
 {
