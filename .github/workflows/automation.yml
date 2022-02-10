@@ -161,9 +161,9 @@ jobs:
           asset_path: ./pod2/${{ env.VERSION }}/bronto-magento-module-enterprise-${{ env.VERSION }}.zip
           asset_name: bronto-magento-module-enterprise-${{ env.VERSION }}.zip
           asset_content_type: application/zip
-      - name: Upload Release Asset 9
+      - name: Upload Release Asset bronto-magento-module-integration
         if: ${{ env.RELEASE_ENV == 'prod' }}
-        id: upload-release-asset-9
+        id: upload-release-asset-bronto-magento-module-integration
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
