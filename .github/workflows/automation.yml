@@ -260,17 +260,6 @@ jobs:
           asset_path: ./pod2/${{ env.VERSION }}/bronto-magento-module-redemption-${{ env.VERSION }}.zip
           asset_name: bronto-magento-module-redemption-${{ env.VERSION }}.zip
           asset_content_type: application/zip
-      - name: Upload Release Asset bronto-php-common-helper
-        if: ${{ env.RELEASE_ENV == 'prod' }}
-        id: upload-release-asset-bronto-php-common-helper
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
-          asset_path: ./pod2/${{ env.VERSION }}/bronto-php-common-helper-${{ env.VERSION }}.zip
-          asset_name: bronto-php-common-helper-${{ env.VERSION }}.zip
-          asset_content_type: application/zip
       - name: Upload Release Asset package json
         if: ${{ env.RELEASE_ENV == 'prod' }}
         id: upload-release-asset-package-json
