@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ruleset name="Bronto extension for Magento 2">
-    <description>The coding standard for Bronto's Magento 2 extension</description>
+<ruleset name="Oracle extension for Magento 2">
+    <description>The coding standard for Oracle's Magento 2 extension</description>
 
-    <file>Bronto</file>
+    <file>Oracle</file>
 
     <exclude-pattern>*/vendor/*</exclude-pattern>
 

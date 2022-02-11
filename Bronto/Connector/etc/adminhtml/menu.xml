@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
-    <menu>
-        <add id="Bronto_Connector::connector" title="Responsys Connector" module="Bronto_Connector" parent="Magento_Backend::system_other_settings" sortOrder="30" action="brontoconnector/registration" resource="Bronto_Connector::registration"/>
-    </menu>
-</config>

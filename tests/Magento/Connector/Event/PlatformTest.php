@@ -5,13 +5,13 @@
  * Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
  */
 
-namespace BrontoTest\Magento\Connector\Event;
+namespace OracleTest\Magento\Connector\Event;
 
-use Bronto\M2\Connector\Event\Platform;
+use Oracle\M2\Connector\Event\Platform;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @coversDefaultClass Bronto\M2\Connector\Event\Platform
+ * @coversDefaultClass Oracle\M2\Connector\Event\Platform
  */
 class PlatformTest extends TestCase
 {

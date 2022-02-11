@@ -1,6 +1,6 @@
 {
-    "name": "bronto/magento2",
-    "description": "The Bronto Connector extension for Magento 2",
+    "name": "oracle/magento2",
+    "description": "The Oracle Connector extension for Magento 2",
     "license": "UPL-1.0",
     "require": {
         "php": "^7.0",
@@ -18,12 +18,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Bronto\\": "Bronto/"
+            "Oracle\\": "Oracle/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrontoTest\\": "tests/"
+            "OracleTest\\": "tests/"
         }
     },
     "scripts": {

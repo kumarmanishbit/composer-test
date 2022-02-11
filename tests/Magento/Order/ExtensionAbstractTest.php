@@ -5,20 +5,20 @@
  * Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
  */
 
-namespace BrontoTest\Magento\Order;
+namespace OracleTest\Magento\Order;
 
 /**
  * Class ExtensionAbstractTest
- * @coversDefaultClass \Bronto\M2\Order\ExtensionAbstract
+ * @coversDefaultClass \Oracle\M2\Order\ExtensionAbstract
  */
 class ExtensionAbstractTest extends \PHPUnit\Framework\TestCase
 {
-    /** @var \Bronto\M2\Order\Settings mocked */
+    /** @var \Oracle\M2\Order\Settings mocked */
     protected $extensionAbstract;
 
     public function setUp()
     {
-        $this->extensionAbstract = $this->getMockBuilder(\Bronto\Order\Model\Observer::class)
+        $this->extensionAbstract = $this->getMockBuilder(\Oracle\Order\Model\Observer::class)
             ->disableOriginalConstructor()
             ->setMethods(['getHelper'])
             ->getMock();
@@ -30,7 +30,7 @@ class ExtensionAbstractTest extends \PHPUnit\Framework\TestCase
      */
     public function testApply()
     {
-        $helper = $this->getMockBuilder(\Bronto\M2\Order\Settings::class)
+        $helper = $this->getMockBuilder(\Oracle\M2\Order\Settings::class)
             ->disableOriginalConstructor()
             ->setMethods(['setCurrency', 'getItemPrice', 'getItemRowTotal', 'getItemDescription', 'formatPrice'])
             ->getMock();

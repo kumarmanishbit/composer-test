@@ -2,7 +2,7 @@
   "latestVersion": "3.10.0",
   "releases": {
       "3.10.0": {
-          "message": "The Bronto Connector Extension v3.10.0 is available!",
+          "message": "The Oracle Connector Extension v3.10.0 is available!",
           "notes": [
               "Add synchronous sending option",
               "Fix account ID on Sarlacc event records"
@@ -11,7 +11,7 @@
           "pubDate": "2020-03-29 00:00:00"
       },
     "3.9.1": {
-      "message": "The Bronto Connector Extension v3.9.1 is available!",
+      "message": "The Oracle Connector Extension v3.9.1 is available!",
       "notes": [
         "Fixed product link to registration during imports"
       ],
@@ -19,7 +19,7 @@
       "pubDate": "2020-10-19 00:00:00"
     },
     "3.9.0": {
-      "message": "The Bronto Connector Extension v3.9.0 is available!",
+      "message": "The Oracle Connector Extension v3.9.0 is available!",
       "notes": [
         "Added support for Magento 2.4.0"
       ],
@@ -27,7 +27,7 @@
       "pubDate": "2020-10-19 00:00:00"
     },
     "3.8.7": {
-      "message": "The Bronto Connector Extension v3.8.7 is available!",
+      "message": "The Oracle Connector Extension v3.8.7 is available!",
       "notes": [
         "Removed deprecated setUseSessionInUrl useage"
       ],
@@ -35,7 +35,7 @@
       "pubDate": "2020-08-11 00:00:00"
     },
     "3.8.6": {
-      "message": "The Bronto Connector Extension v3.8.6 is available!",
+      "message": "The Oracle Connector Extension v3.8.6 is available!",
       "notes": [
         "Add pagination to getList call on OrderRepository",
         "Added logging and improved memory consumption on order import script"
@@ -44,7 +44,7 @@
       "pubDate": "2020-01-14 00:00:00"
     },
     "3.8.5": {
-      "message": "The Bronto Connector Extension v3.8.5 is available!",
+      "message": "The Oracle Connector Extension v3.8.5 is available!",
       "notes": [
         "Added support for transport class changes in Magento 2.3.3"
       ],
@@ -52,7 +52,7 @@
       "pubDate": "2020-01-14 00:00:00"
     },
     "3.8.4": {
-      "message": "The Bronto Connector Extension v3.8.4 is available!",
+      "message": "The Oracle Connector Extension v3.8.4 is available!",
       "notes": [
         "Added shutdown function to capture fatal errors during script execution requests"
       ],
@@ -60,7 +60,7 @@
       "pubDate": "2020-01-14 00:00:00"
     },
     "3.8.3": {
-      "message": "The Bronto Connector Extension v3.8.3 is available!",
+      "message": "The Oracle Connector Extension v3.8.3 is available!",
       "notes": [
         "Added - logic to resolve registrations when current scope doesn't match registered scope",
         "Added - memory usage for script executions"
@@ -69,7 +69,7 @@
       "pubDate": "2019-12-10 00:00:00"
     },
     "3.8.2": {
-      "message": "The Bronto Connector Extension v3.8.2 is available!",
+      "message": "The Oracle Connector Extension v3.8.2 is available!",
       "notes": [
         "Addressed bug with setting from name on emails"
       ],
@@ -77,7 +77,7 @@
       "pubDate": "2019-07-17 00:00:00"
     },
     "3.8.1": {
-      "message": "The Bronto Connector Extension v3.8.1 is available!",
+      "message": "The Oracle Connector Extension v3.8.1 is available!",
       "notes": [
         "Added - Support for order shipped state changes"
       ],
@@ -85,18 +85,18 @@
       "pubDate": "2019-07-09 00:00:00"
     },
     "3.8.0": {
-      "message": "The Bronto Connector Extension v3.8.0 is available!",
+      "message": "The Oracle Connector Extension v3.8.0 is available!",
       "notes": [
-        "Added - Support for Bronto Snippet Manager",
+        "Added - Support for Oracle Snippet Manager",
         "Added - AutoConfig support"
       ],
       "severity": 2,
       "pubDate": "2019-06-24 00:00:00"
     },
     "3.7.5": {
-      "message": "The Bronto Connector Extension v3.7.5 is available!",
+      "message": "The Oracle Connector Extension v3.7.5 is available!",
       "notes": [
-        "Added - designConfig property to Bronto Email Template class",
+        "Added - designConfig property to Oracle Email Template class",
         "Added - logging to settings sync auth POST and import",
         "Added - Accept-Encoding: gzip header http client"
       ],
@@ -104,7 +104,7 @@
       "pubDate": "2019-06-14 00:00:00"
     },
     "3.7.4": {
-      "message": "The Bronto Connector Extension v3.7.4 is available!",
+      "message": "The Oracle Connector Extension v3.7.4 is available!",
       "notes": [
         "Added support for populating the order-source in Order Import functionality"
       ],
@@ -112,7 +112,7 @@
       "pubDate": "2019-04-15 00:00:00"
     },
     "3.7.3": {
-      "message": "The Bronto Connector Extension v3.7.3 is available!",
+      "message": "The Oracle Connector Extension v3.7.3 is available!",
       "notes": [
         "Addressed bug in historical import filters",
         "Fixed incorrect message caching when processing cart reminder triggers",
@@ -123,7 +123,7 @@
       "pubDate": "2019-03-27 00:00:00"
     },
     "3.7.2": {
-      "message": "The Bronto Connector Extension v3.7.2 is available!",
+      "message": "The Oracle Connector Extension v3.7.2 is available!",
       "notes": [
         "Bug fix for template variable tag renaming mechanism to allow it to encode properly",
         "Adjusted cart/browse 'fiddle' initialization to properly handle an empty object for 'mage-cache-storage'"
@@ -132,7 +132,7 @@
       "pubDate": "2019-03-04 00:00:00"
     },
     "3.7.1": {
-      "message": "The Bronto Connector Extension v3.7.1 is available!",
+      "message": "The Oracle Connector Extension v3.7.1 is available!",
       "notes": [
         "Changes to align with new requirements for Magento marketplace certification"
       ],
@@ -140,7 +140,7 @@
       "pubDate": "2019-02-06 00:00:00"
     },
     "3.7.0": {
-      "message": "The Bronto Connector Extension v3.7.0 is available!",
+      "message": "The Oracle Connector Extension v3.7.0 is available!",
       "notes": [
         "Added support for Magento 2.3.0."
       ],
@@ -148,7 +148,7 @@
       "pubDate": "2019-01-24 00:00:00"
     },
     "3.6.11": {
-      "message": "The Bronto Connector Extension v3.6.11 is available!",
+      "message": "The Oracle Connector Extension v3.6.11 is available!",
       "notes": [
         "Updated order transform to explicitly throw an exception when the order associated with a queued event no longer exists."
       ],
@@ -156,7 +156,7 @@
       "pubDate": "2019-01-09 00:00:00"
     },
     "3.6.10": {
-      "message": "The Bronto Connector Extension v3.6.10 is available!",
+      "message": "The Oracle Connector Extension v3.6.10 is available!",
       "notes": [
         "Added debug logging for connector requests",
         "Fixed Cart update reminder trigger to create an entry after the first product is added to the cart",
@@ -166,7 +166,7 @@
       "pubDate": "2018-12-13 00:00:00"
     },
     "3.6.9": {
-      "message": "The Bronto Connector Extension v3.6.9 is available!",
+      "message": "The Oracle Connector Extension v3.6.9 is available!",
       "notes": [
         "Added support for autoconfiguration"
       ],
@@ -174,7 +174,7 @@
       "pubDate": "2018-11-16 00:00:00"
     },
     "3.6.8": {
-      "message": "The Bronto Connector Extension v3.6.8 is available!",
+      "message": "The Oracle Connector Extension v3.6.8 is available!",
       "notes": [
         "Fixed message template loading plugin bug when the module is disabled"
       ],
@@ -182,7 +182,7 @@
       "pubDate": "2018-10-22 14:22:00"
     },
     "3.6.7": {
-      "message": "The Bronto Connector Extension v3.6.7 is available!",
+      "message": "The Oracle Connector Extension v3.6.7 is available!",
       "notes": [
         "Fixed clean up threshold task"
       ],
@@ -190,7 +190,7 @@
       "pubDate": "2018-10-04 15:46:00"
     },
     "3.6.6": {
-      "message": "The Bronto Connector Extension v3.6.6 is available!",
+      "message": "The Oracle Connector Extension v3.6.6 is available!",
       "notes": [
         "Added exception handling for loading non-existent Quotes",
         "Fixed Sale Price calculation when discounts are used for order events"
@@ -199,7 +199,7 @@
       "pubDate": "2018-09-26 11:10:00"
     },
     "3.6.5": {
-      "message": "The Bronto Connector Extension v3.6.5 is available!",
+      "message": "The Oracle Connector Extension v3.6.5 is available!",
       "notes": [
         "Fixed TID cookie TTL logic",
         "Fixed Review Triggers to properly send",
@@ -209,7 +209,7 @@
       "pubDate": "2018-06-27 10:35:53"
     },
     "3.6.4": {
-      "message": "The Bronto Connector Extension v3.6.4 is available!",
+      "message": "The Oracle Connector Extension v3.6.4 is available!",
       "notes": [
         "Added logging around order event transformation"
       ],
@@ -217,7 +217,7 @@
       "pubDate": "2018-06-06 17:36:44"
     },
     "3.6.3": {
-      "message": "The Bronto Connector Extension v3.6.3 is available!",
+      "message": "The Oracle Connector Extension v3.6.3 is available!",
       "notes": [
         "Fixed class import declaration"
       ],
@@ -225,7 +225,7 @@
       "pubDate": "2018-05-25 14:40:00"
     },
     "3.6.2": {
-      "message": "The Bronto Connector Extension v3.6.2 is available!",
+      "message": "The Oracle Connector Extension v3.6.2 is available!",
       "notes": [
         "Fixed cart collection loading by removing unused TID table join reference"
       ],
@@ -233,7 +233,7 @@
       "pubDate": "2018-04-16 10:50:37"
     },
     "3.6.1": {
-      "message": "The Bronto Connector Extension v3.6.1 is available!",
+      "message": "The Oracle Connector Extension v3.6.1 is available!",
       "notes": [
         "Return only parent products as line items on order and cart events",
         "Fixed template loading with default values to address issues with template imports"
@@ -242,7 +242,7 @@
       "pubDate": "2018-04-09 11:35:07"
     },
     "3.6.0": {
-      "message": "The Bronto Connector Extension v3.6.0 is available!",
+      "message": "The Oracle Connector Extension v3.6.0 is available!",
       "notes": [
         "Updated Order Attribution process by introducing a new TID model to allow for the persistence of the TID value",
         "Added support for PHP version 7.1 and Magento version 2.2.2"
@@ -251,7 +251,7 @@
       "pubDate": "2018-03-19 14:23:51"
     },
     "3.5.3": {
-      "message": "The Bronto Connector Extension v3.5.3 is available!",
+      "message": "The Oracle Connector Extension v3.5.3 is available!",
       "notes": [
         "Added order related variables to order deliveries",
         "Avoid direct manipulation of Magento customer model during contact update"
@@ -260,7 +260,7 @@
       "pubDate": "2018-02-20 14:06:13"
     },
     "3.5.2": {
-      "message": "The Bronto Connector Extension v3.5.2 is available!",
+      "message": "The Oracle Connector Extension v3.5.2 is available!",
       "notes": [
         "Fixed list removal on unsubscribe",
         "Added scope to tax inclusion in Cart Recovery"
@@ -269,7 +269,7 @@
       "pubDate": "2018-01-17 10:36:50"
     },
     "3.5.1": {
-      "message": "The Bronto Connector Extension v3.5.1 is available!",
+      "message": "The Oracle Connector Extension v3.5.1 is available!",
       "notes": [
         "Fixed scoped product URL transformation import records",
         "Fixed function calls on import events"
@@ -278,7 +278,7 @@
       "pubDate": "2017-12-13 11:41:00"
     },
     "3.5.0": {
-      "message": "The Bronto Connector Extension v3.5.0 is available!",
+      "message": "The Oracle Connector Extension v3.5.0 is available!",
       "notes": [
         "Support for PHP 7"
       ],
@@ -286,7 +286,7 @@
       "pubDate": "2017-12-4 21:19:00"
     },
     "3.4.3": {
-      "message": "The Bronto Connector Extension v3.4.3 is available!",
+      "message": "The Oracle Connector Extension v3.4.3 is available!",
       "notes": [
         "Fixed Product options requirements",
         "Added cart event dispatch when user subscribes to newsletters",
@@ -296,7 +296,7 @@
       "pubDate": "2017-11-8 21:38:00"
     },
     "3.4.2": {
-      "message": "The Bronto Connector Extension v3.4.2 is available!",
+      "message": "The Oracle Connector Extension v3.4.2 is available!",
       "notes": [
         "Fixed missing method"
       ],
@@ -304,7 +304,7 @@
       "pubDate": "2017-11-1 11:09:58"
     },
     "3.4.1": {
-      "message": "The Bronto Connector Extension v3.4.1 is available!",
+      "message": "The Oracle Connector Extension v3.4.1 is available!",
       "notes": [
         "Fixed double encoding of imported template variables"
       ],
@@ -312,7 +312,7 @@
       "pubDate": "2017-10-27 19:40:00"
     },
     "3.4.0": {
-      "message": "The Bronto Connector Extension v3.4.0 is available!",
+      "message": "The Oracle Connector Extension v3.4.0 is available!",
       "notes": [
         "Added custom URL configuration"
       ],
@@ -320,7 +320,7 @@
       "pubDate": "2017-10-11 13:00:00"
     },
     "3.3.1": {
-      "message": "The Bronto Connector Extension v3.3.1 is available!",
+      "message": "The Oracle Connector Extension v3.3.1 is available!",
       "notes": [
         "Fixed missing parent ID in configurable product import"
       ],
@@ -328,7 +328,7 @@
       "pubDate": "2017-09-18 17:00:00"
     },
     "3.3.0": {
-      "message": "The Bronto Connector Extension v3.3.0 is available!",
+      "message": "The Oracle Connector Extension v3.3.0 is available!",
       "notes": [
         "In-App Notification for Connector Update",
         "Magento Certification Compliance"
@@ -337,7 +337,7 @@
       "pubDate": "2017-08-23 10:05:19"
     },
     "3.2.0": {
-      "message": "The Bronto Connector Extension v3.2.0 is available!",
+      "message": "The Oracle Connector Extension v3.2.0 is available!",
       "notes": [
         "Added setting to include tax with line item prices"
       ],
@@ -345,7 +345,7 @@
       "pubDate": "2017-08-23 10:05:19"
     },
     "3.1.7": {
-      "message": "The Bronto Connector Extension v3.1.7 is available!",
+      "message": "The Oracle Connector Extension v3.1.7 is available!",
       "notes": [
         "Fixes composer PHP version constraints"
       ],
@@ -353,7 +353,7 @@
       "pubDate": "2017-08-04 13:24:25"
     },
     "3.1.6": {
-      "message": "The Bronto Connector Extension v3.1.6 is available!",
+      "message": "The Oracle Connector Extension v3.1.6 is available!",
       "notes": [
         "Fixed regression issue in browse such that \"VIEW\" events are emitted instead of \"VISIT\" events."
       ],
@@ -361,7 +361,7 @@
       "pubDate": "2017-08-02 15:58:20"
     },
     "3.1.5": {
-      "message": "The Bronto Connector Extension v3.1.5 is available!",
+      "message": "The Oracle Connector Extension v3.1.5 is available!",
       "notes": [
         "Fixed Conversion Tracking by adding an order event observer on cart completion",
         "Added new JS to handle fiddling cart and browse events without back-end interaction"
@@ -370,7 +370,7 @@
       "pubDate": "2017-07-23 13:11:36"
     },
     "3.1.4": {
-      "message": "The Bronto Connector Extension v3.1.4 is available!",
+      "message": "The Oracle Connector Extension v3.1.4 is available!",
       "notes": [
         "Removed support for Recommendations",
         "Fixed a bug that ignored a user preference during historical order imports",
@@ -381,15 +381,15 @@
       "pubDate": "2017-05-23 16:07:43"
     },
     "3.1.3": {
-      "message": "The Bronto Connector Extension v3.1.3 is available!",
+      "message": "The Oracle Connector Extension v3.1.3 is available!",
       "notes": [
-        "Ensures Magento product deletions are properly reflected in Bronto"
+        "Ensures Magento product deletions are properly reflected in Oracle"
       ],
       "severity": 1,
       "pubDate": "2017-04-19 13:16:37"
     },
     "3.1.2": {
-      "message": "The Bronto Connector Extension v3.1.2 is available!",
+      "message": "The Oracle Connector Extension v3.1.2 is available!",
       "notes": [
         "Refactored some view models to allow for Full Page Caching",
         "Removed support for Javascript Cart Recovery option. Cart Recovery Integration will now be API only."
@@ -398,9 +398,9 @@
       "pubDate": "2017-04-19 14:40:46"
     },
     "3.1.1": {
-      "message": "The Bronto Connector Extension v3.1.1 is available!",
+      "message": "The Oracle Connector Extension v3.1.1 is available!",
       "notes": [
-        "Returned to using Bronto specific order status instead of Magento's order status when importing to Bronto"
+        "Returned to using Oracle specific order status instead of Magento's order status when importing to Oracle"
       ],
       "severity": 4,
       "pubDate": "2017-03-24 15:02:43"

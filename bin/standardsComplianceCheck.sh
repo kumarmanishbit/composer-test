@@ -48,8 +48,8 @@ if [[ $(composer outdated -D | grep -c $CODE_SNIFFER_PACKAGE)  -ne 0 ]]; then
   composer update $CODE_SNIFFER_PACKAGE
 fi
 
-# Only sniffs changed files that are to be packaged up into modules (files in the Common directory)
-CODE_SNIFFER_FILES=`git status --porcelain | egrep "^([AM]+)\b" | cut -c 4- | egrep "^\/?Bronto\/"`
+# Only sniffs changed files that are to be packaged up into modules (files in the Oracle directory)
+CODE_SNIFFER_FILES=`git status --porcelain | egrep "^([AM]+)\b" | cut -c 4- | egrep "^\/?Oracle\/"`
 
 if [ "$CODE_SNIFFER_FILES" != "" ]
 then

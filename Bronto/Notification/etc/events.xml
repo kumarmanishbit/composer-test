@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
-    <event name="bronto_connector_advanced_endpoint_additional">
-        <observer name="bronto_notification_advanced_additional" instance="Bronto\Notification\Model\Observer\AfterAdvancedAdditionalObserver" />
-    </event>
-    <event name="bronto_connector_script_notification_event">
-        <observer name="bronto_notification_script_event" instance="Bronto\Notification\Model\Observer\AfterCreateAnnouncementsObserver" />
-    </event>
-</config>

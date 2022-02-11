@@ -13,11 +13,11 @@ use Colors\Color;
 const ENV_OPTIONS = ['staging', 'stg', 'production', 'prod'];
 const ROOT_DIR = __DIR__ . '/../';
 
-const META_FILE_PATH = 'Bronto/M2/Impl/Core/Meta.php';
+const META_FILE_PATH = 'Oracle/M2/Impl/Core/Meta.php';
 
-const MIDDLEWARE_FILE_PATH = 'Bronto/M2/Connector/Middleware.php';
+const MIDDLEWARE_FILE_PATH = 'Oracle/M2/Connector/Middleware.php';
 
-const PLATFORM_FILE_PATH = 'Bronto/M2/Connector/Event/Platform.php';
+const PLATFORM_FILE_PATH = 'Oracle/M2/Connector/Event/Platform.php';
 
 $config = yaml_parse_file(__DIR__ . '/config.yml');
 $command = new Command();
@@ -232,12 +232,12 @@ function updateModuleComposer(array &$packageInfo, string $moduleDir, $composerJ
     global $targetVersion;
 
     foreach ($packageInfo['require'] as $dependencyName => $version) {
-        if ($dependencyName == 'bronto/php-common-helper') {
+        if ($dependencyName == 'oracle/php-common-helper') {
            // continue;
         }
 
-        // Only update versions of Common dependencies
-        if (substr($dependencyName, 0, strpos($dependencyName, '/')) == 'bronto') {
+        // Only update versions of Oracle dependencies
+        if (substr($dependencyName, 0, strpos($dependencyName, '/')) == 'oracle') {
             $packageInfo['require'][$dependencyName] = $targetVersion;
         }
     }
@@ -283,7 +283,7 @@ function archivePackages()
     echo "Packaging all newly built packages into one tarball" . PHP_EOL;
     if (!$dryRun) {
         exec(
-            "cd {$buildDir} && tar -czvf Common-Extension-{$targetVersion}.tar.gz {$targetVersion}"
+            "cd {$buildDir} && tar -czvf Oracle-Extension-{$targetVersion}.tar.gz {$targetVersion}"
         );
     }
 }

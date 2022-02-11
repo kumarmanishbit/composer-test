@@ -5,20 +5,20 @@
  * Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
  */
 
-namespace BrontoTest\Magento\Connector;
+namespace OracleTest\Magento\Connector;
 
-use Bronto\Connector\Model\Registration;
-use Bronto\M2\Connector\Middleware;
-use Bronto\M2\Connector\RegistrationInterface;
-use Bronto\Serialize\BiDirectional;
-use Bronto\Serialize\Json\Standard;
-use Bronto\Transfer\Curl\Request;
-use Bronto\Transfer\Curl\Response;
+use Oracle\Connector\Model\Registration;
+use Oracle\M2\Connector\Middleware;
+use Oracle\M2\Connector\RegistrationInterface;
+use Oracle\Serialize\BiDirectional;
+use Oracle\Serialize\Json\Standard;
+use Oracle\Transfer\Curl\Request;
+use Oracle\Transfer\Curl\Response;
 use Magento\Backend\Service\V1\ModuleService;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @coversDefaultClass Bronto\M2\Connector\Middleware
+ * @coversDefaultClass Oracle\M2\Connector\Middleware
  */
 class MiddlewareTest extends TestCase
 {
@@ -66,7 +66,7 @@ class MiddlewareTest extends TestCase
         $registration->expects($this->any())->method('getIsActive')->willReturn(true);
 
         // Mock all dependencies and inject into constructor
-        $client = $this->initMock(\Bronto\Transfer\Curl\Adapter::class, true, [], ['createRequest']);
+        $client = $this->initMock(\Oracle\Transfer\Curl\Adapter::class, true, [], ['createRequest']);
         $response = $this->initMock(Response::class, true, [], ['code']);
         $response->expects($this->any())->method('code')->willReturn(200);
         $request = $this->initMock(Request::class, true, [] , ['respond']);
@@ -77,17 +77,17 @@ class MiddlewareTest extends TestCase
         $encoder->expects($this->any())->method('encode')->willReturn('stuff');
         $encoder->expects($this->any())->method('getMimeType')->willReturn('application/json');
 
-        $logger = $this->initMock(\Bronto\M2\Impl\Core\Logger::class, true, [], []);
-        $meta = $this->initMock(\Bronto\M2\Impl\Core\Meta::class, true, [], []);
+        $logger = $this->initMock(\Oracle\M2\Impl\Core\Logger::class, true, [], []);
+        $meta = $this->initMock(\Oracle\M2\Impl\Core\Meta::class, true, [], []);
 
-        $encryptor = $this->initMock(\Bronto\M2\Impl\Core\Encryptor::class, true, [], ['encrypt']);
+        $encryptor = $this->initMock(\Oracle\M2\Impl\Core\Encryptor::class, true, [], ['encrypt']);
         $encryptor->expects($this->any())->method('encrypt')->willReturn('things');
 
-        $eventManager = $this->initMock(\Bronto\M2\Impl\Core\Event::class, true, [], []);
-        $storeManager = $this->initMock(\Bronto\M2\Impl\Core\Store::class, true, [], ['getStore']);
-        $configManager = $this->initMock(\Bronto\M2\Impl\Core\Config::class, true, [], []);
+        $eventManager = $this->initMock(\Oracle\M2\Impl\Core\Event::class, true, [], []);
+        $storeManager = $this->initMock(\Oracle\M2\Impl\Core\Store::class, true, [], ['getStore']);
+        $configManager = $this->initMock(\Oracle\M2\Impl\Core\Config::class, true, [], []);
 
-        $settings = $this->initMock(\Bronto\M2\Connector\Settings::class, true, [], ['getCustomUrl']);
+        $settings = $this->initMock(\Oracle\M2\Connector\Settings::class, true, [], ['getCustomUrl']);
         $settings->expects($this->any())->method('getCustomUrl')->willReturn('more/stuff');
 
         $serializer = $this->getMockBuilder(\Magento\Framework\Serialize\SerializerInterface::class)->getMock();

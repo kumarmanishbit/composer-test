@@ -1,13 +1,13 @@
 <?php
 
-namespace Bronto\Connector\Tests\Unit\Helper;
+namespace Oracle\Connector\Tests\Unit\Helper;
 
-use Bronto\Connector\Helper\Data;
+use Oracle\Connector\Helper\Data;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Class DataTest
- * @package Bronto\Connector\Tests\Unit\Helper
+ * @package Oracle\Connector\Tests\Unit\Helper
  */
 class DataTest extends TestCase
 {
@@ -18,7 +18,7 @@ class DataTest extends TestCase
     public function dataTestPerserveFixedProperties()
     {
         $data = [];
-        $description = 'Tests data similar to what is stored as a Common Record';
+        $description = 'Tests data similar to what is stored as a Oracle Record';
         $fixedProperties = [
             'order' => [
                 'tid' => 0
