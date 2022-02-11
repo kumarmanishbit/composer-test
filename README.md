@@ -55,10 +55,7 @@ This command will get the specified component from the mentioned repositories ur
 
 3. Run below command to enable these modules.
 ```composer log
-  ./bin/magento module:enable Oracle_Browse Oracle_Cart Oracle_Connector 
-        Oracle_Contact Oracle_Coupon Oracle_Email Oracle_Integration 
-        Oracle_Inventory Oracle_M2 Oracle_Notification Oracle_Optin 
-        Oracle_Order Oracle_Product Oracle_Rating Oracle_Redemption
+  ./bin/magento module:enable Oracle_Browse Oracle_Cart Oracle_Connector Oracle_Contact Oracle_Coupon Oracle_Email Oracle_Integration Oracle_Inventory Oracle_M2 Oracle_Notification Oracle_Optin Oracle_Order Oracle_Product Oracle_Rating Oracle_Redemption
 ```
 
 4. Run below command to make sure that the enabled modules are properly 
