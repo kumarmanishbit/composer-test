@@ -58,7 +58,7 @@ class CouponGenerationIterator implements \Iterator
     {
         $generator = $this->_generators->current();
         $storeId = $this->_middleware->defaultStoreId($generator['scope'], $generator['scopeId']);
-        return new \Oracle\DataObject(
+        return new \Oracle\M2\Common\DataObject(
             [
                 'storeId' => $storeId,
                 'ruleId' => $generator['ruleId'],

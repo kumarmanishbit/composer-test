@@ -176,7 +176,7 @@ abstract class ExtensionAbstract implements \Oracle\M2\Connector\Discovery\Exten
                                         continue;
                                     }
                                     $this->_appEmulation->startEnvironmentEmulation($context['storeId'], $context['area'], true);
-                                    $transform = new \Oracle\DataObject([
+                                    $transform = new \Oracle\M2\Common\DataObject([
                                         'context' => $context,
                                         $type => $data['data'][$type]
                                     ]);

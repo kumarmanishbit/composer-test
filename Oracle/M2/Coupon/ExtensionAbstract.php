@@ -174,7 +174,7 @@ abstract class ExtensionAbstract
                     $coupons = $this->_manager->acquireCoupons($generator);
                     $updatedAmount = count($coupons);
                     if ($generator['integration']) {
-                        $coupons = new \Oracle\DataObject(
+                        $coupons = new \Oracle\M2\Common\DataObject(
                             [
                                 'campaignId' => $generator['campaignId'],
                                 'ruleId' => $generator['ruleId'],

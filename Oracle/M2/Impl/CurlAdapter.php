@@ -14,6 +14,6 @@ class CurlAdapter
      */
     public function aroundCreateRequest($subject, $createReq, $method, $uri)
     {
-        return new \Oracle\M2\Common\Transfer\Curl\Request($method, $uri, new \Oracle\DataObject());
+        return new \Oracle\M2\Common\Transfer\Curl\Request($method, $uri, new \Oracle\M2\Common\DataObject());
     }
 }

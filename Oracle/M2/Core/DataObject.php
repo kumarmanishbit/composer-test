@@ -7,7 +7,7 @@
 
 namespace Oracle\M2\Core;
 
-class DataObject extends \Oracle\DataObject
+class DataObject extends \Oracle\M2\Common\DataObject
 {
     protected $_trackChanges;
     protected $_changes = [];

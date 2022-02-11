@@ -1123,7 +1123,7 @@ abstract class ExtensionAbstract extends \Oracle\M2\Connector\Discovery\Advanced
             if (!empty($template)) {
                 $templateId = $this->_helper->getTemplateId($template);
                 $message = $this->_helper->replaceTemplate($templateId, ['store' => $storeId]);
-                $objects[] = new \Oracle\DataObject([
+                $objects[] = new \Oracle\M2\Common\DataObject([
                     'storeId' => $storeId,
                     'message' => $message,
                     'template' => $template
@@ -1135,7 +1135,7 @@ abstract class ExtensionAbstract extends \Oracle\M2\Connector\Discovery\Advanced
 
     /**
      * @see parent
-     * @return \Oracle\DataObject[]
+     * @return \Oracle\M2\Common\DataObject[]
      */
     protected function _sendHistorical($registration, $data)
     {
@@ -1148,7 +1148,7 @@ abstract class ExtensionAbstract extends \Oracle\M2\Connector\Discovery\Advanced
         foreach ($lookups as $template) {
             $templateId = $this->_helper->getTemplateId($template);
             $message = $this->_helper->replaceTemplate($templateId, ['store' => $storeId]);
-            $objects[] = new \Oracle\DataObject([
+            $objects[] = new \Oracle\M2\Common\DataObject([
                 'storeId' => $storeId,
                 'message' => $message,
                 'template' => $template
