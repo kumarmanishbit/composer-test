@@ -42,15 +42,10 @@ jobs:
         run: |
           set +o pipefail
           export VERSION="unknown"
-          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          export RELEASE_ENV="stg"
           echo "RELEASE_ENV=${{ needs.build.outputs.releaseEnv }}" >> $GITHUB_ENV
           echo "VERSION=${{ needs.build.outputs.version }}" >> $GITHUB_ENV
-          echo "Printing the env name"
-          env
-          git status
-          echo "Printing env.RELEASE_ENV name"
-          echo $RELEASE_ENV
-          echo env.RELEASE_ENV
+
       - name: Download site Content
         if: ${{ env.RELEASE_ENV == 'prod' }}
         uses: actions/download-artifact@v2
@@ -297,30 +292,14 @@ jobs:
         id: gen_release_meta
         run: |
           php ci/gen-version.php  > ./version
-          ls
           set +o pipefail
           export VERSION="unknown"
           [ -f ./version ] && export VERSION=$(cat ./version)
           echo "VERSION=$VERSION" >> $GITHUB_ENV
           [ -f ./environment ] && export RELEASE_ENV=$(cat ./environment)
           echo "RELEASE_ENV=RELEASE_ENV" >> $GITHUB_ENV
-          git status
-          echo "RELEASE_ENV value"
-          echo $RELEASE_ENV
           echo "::set-output name=releaseEnv::$RELEASE_ENV"
           echo "::set-output name=version::$VERSION"
-          echo "*******"
-          rm ./environment
-
-      - name: print the repo name
-        run: |
-          echo ${{ github.repository }}
-          echo ${{ github.repository }}
-          echo "${{ env.VERSION }}"
-          echo $VERSION
-          echo https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          echo "Printing environment variable"
-          env
 
       - name: Execute build steps
         run:  php ci/build.php --environment prod --version $VERSION
@@ -336,9 +315,3 @@ jobs:
 
       - name: Remove auth.json file
         run: rm -f $GITHUB_WORKSPACE/auth.json
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
