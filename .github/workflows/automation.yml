@@ -19,44 +19,38 @@ jobs:
     name: "Release static zip to Github Releases"
     runs-on: ubuntu-latest
     needs: build
-    
+
     steps:
-    
+
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-          
+
       - name: Add HTTP basic auth credentials
         run: echo '${{ secrets.COMPOSER_AUTH_JSON }}' > $GITHUB_WORKSPACE/auth.json
-      
+
       - name: Install dependencies
         uses: php-actions/composer@v6
         with:
           php_version: 7.4
           version: 2
-          
+
       - name: print the repo name
         run: echo ${{ github.repository }}
-        
+
       - name: Generate version
         run: |
-           echo ${{ needs.build.outputs.output1 }}
-           php ci/gen-version.php  > ./version
-           ls
-           set +o pipefail
-           export VERSION="unknown"
-           echo "echo environment file"
-           cat ./environment
-           cat environment
-           [ -f ./version ] && export VERSION=$(cat ./version)
-           echo "VERSION=$VERSION" >> $GITHUB_ENV
-           echo "RELEASE_ENV=${{ needs.build.outputs.output1 }}" >> $GITHUB_ENV
-           echo "Printing the env name"
-           env
-           git status
-           echo "Printing env.RELEASE_ENV name"
-           echo $RELEASE_ENV
-           echo env.RELEASE_ENV
+          set +o pipefail
+          export VERSION="unknown"
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          echo "RELEASE_ENV=${{ needs.build.outputs.output1 }}" >> $GITHUB_ENV
+          echo "VERSION=${{ needs.build.outputs.output2 }}" >> $GITHUB_ENV
+          echo "Printing the env name"
+          env
+          git status
+          echo "Printing env.RELEASE_ENV name"
+          echo $RELEASE_ENV
+          echo env.RELEASE_ENV
       - name: Download site Content
         if: ${{ env.RELEASE_ENV == 'prod' }}
         uses: actions/download-artifact@v2
@@ -80,7 +74,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
           asset_path: ./pod2/${{ env.VERSION }}/oracle-magento-module-all-${{ env.VERSION }}.zip
           asset_name: oracle-magento-module-all-${{ env.VERSION }}.zip
           asset_content_type: application/zip
@@ -278,16 +272,17 @@ jobs:
 
     outputs:
       output1: ${{ steps.step1.outputs.test }}
+      output2: ${{ steps.step1.outputs.version }}
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      
+
       - name: Add HTTP basic auth credentials
         run: echo '${{ secrets.COMPOSER_AUTH_JSON }}' > $GITHUB_WORKSPACE/auth.json
-      
+
       - name: Install dependencies
         uses: php-actions/composer@v6
         with:
@@ -297,25 +292,26 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: php -v
-        
+
       - name: Generate version
         id: step1
         run: |
-           php ci/gen-version.php  > ./version
-           ls
-           set +o pipefail
-           export VERSION="unknown"
-           [ -f ./version ] && export VERSION=$(cat ./version)
-           echo "VERSION=$VERSION" >> $GITHUB_ENV
-           [ -f ./environment ] && export RELEASE_ENV=$(cat ./environment)
-           echo "RELEASE_ENV=RELEASE_ENV" >> $GITHUB_ENV
-           git status
-           echo "RELEASE_ENV value"
-           echo $RELEASE_ENV
-           echo "::set-output name=test::$RELEASE_ENV"
-           echo "*******"
-           rm ./environment
-           
+          php ci/gen-version.php  > ./version
+          ls
+          set +o pipefail
+          export VERSION="unknown"
+          [ -f ./version ] && export VERSION=$(cat ./version)
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          [ -f ./environment ] && export RELEASE_ENV=$(cat ./environment)
+          echo "RELEASE_ENV=RELEASE_ENV" >> $GITHUB_ENV
+          git status
+          echo "RELEASE_ENV value"
+          echo $RELEASE_ENV
+          echo "::set-output name=test::$RELEASE_ENV"
+          echo "::set-output name=version::$VERSION"
+          echo "*******"
+          rm ./environment
+
       - name: print the repo name
         run: |
           echo ${{ github.repository }}
@@ -325,10 +321,10 @@ jobs:
           echo https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           echo "Printing environment variable"
           env
-        
+
       - name: Execute build steps
         run:  php ci/build.php --environment prod --version $VERSION
-        
+
       - name: Check the build version
         run: cd builds/ && ls
 
@@ -337,7 +333,7 @@ jobs:
         with:
           name: magento-extension
           path: ./builds/ # or path/to/artifact
-          
+
       - name: Remove auth.json file
         run: rm -f $GITHUB_WORKSPACE/auth.json
 
