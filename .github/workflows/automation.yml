@@ -43,8 +43,8 @@ jobs:
           set +o pipefail
           export VERSION="unknown"
           echo "VERSION=$VERSION" >> $GITHUB_ENV
-          echo "RELEASE_ENV=${{ needs.build.outputs.output1 }}" >> $GITHUB_ENV
-          echo "VERSION=${{ needs.build.outputs.output2 }}" >> $GITHUB_ENV
+          echo "RELEASE_ENV=${{ needs.build.outputs.releaseEnv }}" >> $GITHUB_ENV
+          echo "VERSION=${{ needs.build.outputs.version }}" >> $GITHUB_ENV
           echo "Printing the env name"
           env
           git status
@@ -271,8 +271,8 @@ jobs:
     runs-on: ubuntu-latest
 
     outputs:
-      output1: ${{ steps.gen_release_meta.outputs.releaseEnv }}
-      output2: ${{ steps.gen_release_meta.outputs.version }}
+      releaseEnv: ${{ steps.gen_release_meta.outputs.releaseEnv }}
+      version: ${{ steps.gen_release_meta.outputs.version }}
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
