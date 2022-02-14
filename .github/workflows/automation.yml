@@ -271,8 +271,8 @@ jobs:
     runs-on: ubuntu-latest
 
     outputs:
-      output1: ${{ steps.step1.outputs.test }}
-      output2: ${{ steps.step1.outputs.version }}
+      output1: ${{ steps.gen_release_meta.outputs.releaseEnv }}
+      output2: ${{ steps.gen_release_meta.outputs.version }}
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -294,7 +294,7 @@ jobs:
         run: php -v
 
       - name: Generate version
-        id: step1
+        id: gen_release_meta
         run: |
           php ci/gen-version.php  > ./version
           ls
@@ -307,7 +307,7 @@ jobs:
           git status
           echo "RELEASE_ENV value"
           echo $RELEASE_ENV
-          echo "::set-output name=test::$RELEASE_ENV"
+          echo "::set-output name=releaseEnv::$RELEASE_ENV"
           echo "::set-output name=version::$VERSION"
           echo "*******"
           rm ./environment
