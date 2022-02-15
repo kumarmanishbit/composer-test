@@ -6,6 +6,7 @@ capability through Magento e-commerce platform via Oracle CX Apps.
 ## Prerequisite
 1. We need Magento e-commerce platform, and composer to use this 
 extension.
+
 2. This extension is used to leverage marketing capability with 
 Oracle Responsys, so you must have a Responsys account to do the setup.
 
