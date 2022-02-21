@@ -261,6 +261,9 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php-versions: ['7.4']
 
     outputs:
       releaseEnv: ${{ steps.gen_release_meta.outputs.releaseEnv }}
@@ -278,12 +281,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run:  |
-          sudo a2dismod php8.1.2
-          sudo a2enmod php7.4
-          sudo service apache2 restart
-          sudo update-alternatives --config php
-          sudo update-alternatives --config phar
-          sudo update-alternatives --config phar.phar
           php -v
           php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
           php -r "if (hash_file('sha384', 'composer-setup.php') === '906a84df04cea2aa72f40b5f787e49f22d4c2f19492ac310e8cba5b96ac8b64115ac402c8cd292b8a03482574915d1a8') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
